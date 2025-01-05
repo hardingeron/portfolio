@@ -1,0 +1,12 @@
+
+msgid "Home — Portfolio"
+msgstr "Главная — Портфолию"
+
+msgid "Code that solves your problems"
+msgstr "Код, который решает ваши задачи"
+
+msgid "Projects"
+msgstr "Проекты"
+
+msgid "Services"
+msgstr "Услуги"

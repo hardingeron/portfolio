@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ _('Home — Portfolio') }}</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Свой CSS -->
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-3">
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <h1 class="h3 m-0 text-center text-md-start">{{ _('Code that solves your problems') }}</h1>
+                <nav class="text-center mt-2 mt-md-0">
+                    <a href="/projects" class="text-white text-decoration-none mx-2">{{ _('Projects') }}</a>
+                    <a href="/services" class="text-white text-decoration-none mx-2">{{ _('Services') }}</a>
+                    <a href="/contacts" class="text-white text-decoration-none mx-2">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <a href="?lang=en">{{ _('English') }}</a>
+    <a href="?lang=ru">{{ _('Русский') }}</a>
+    <a href="?lang=ka">{{ _('ქართული') }}</a>
+
+
+    <!-- Hero Section -->
+    <section class="hero bg-light text-center py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold animate__animated animate__fadeIn">Привет! Я Дима, ваш универсальный помощник</h2>
+            <p class="lead animate__animated animate__fadeIn animate__delay-1s">Я создаю современные и удобные сайты, которые помогают бизнесам работать эффективно и взаимодействовать с пользователями. Мои проекты ориентированы на простоту в использовании, а также на то, чтобы вы могли легко управлять своим бизнесом онлайн.</p>
+            <div class="d-flex justify-content-center flex-wrap animate__animated animate__fadeIn animate__delay-2s">
+                <a href="/projects" class="btn btn-primary btn-lg m-2">Посмотреть проекты</a>
+                <a href="/contacts" class="btn btn-outline-primary btn-lg m-2">Связаться со мной</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Мои навыки</h2>
+            <div class="row g-4">
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                            <h5 class="card-title mt-3">Python</h5>
+                            <p class="card-text">Мощный язык программирования для любых задач.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-database fs-1 text-success"></i>
+                            <h5 class="card-title mt-3">SQLite</h5>
+                            <p class="card-text">Лёгкая встроенная база данных для небольших проектов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-server fs-1 text-warning"></i>
+                            <h5 class="card-title mt-3">MySQL</h5>
+                            <p class="card-text">Надёжная база данных для сложных приложений.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-network-wired fs-1 text-danger"></i>
+                            <h5 class="card-title mt-3">Создание серверов</h5>
+                            <p class="card-text">Запуск веб-приложений в глобальной сети.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-git fs-1 text-secondary"></i>
+                            <h5 class="card-title mt-3">Git</h5>
+                            <p class="card-text">Системы контроля версий для работы в команде.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-api fs-1 text-info"></i>
+                            <h5 class="card-title mt-3">Telegram Bot</h5>
+                            <p class="card-text">Создание и поддержка телеграм ботов</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-file-code fs-1 text-warning"></i>
+                            <h5 class="card-title mt-3">JavaScript</h5>
+                            <p class="card-text">Интерактивные элементы и клиентская логика.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-cloud-arrow-up fs-1 text-primary"></i>
+                            <h5 class="card-title mt-3">Деплой</h5>
+                            <p class="card-text">Развёртывание приложений на хостингах и серверах.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 Дима. Все права защищены.</p>
+            <p>
+                <a href="https://github.com/твой_аккаунт" class="text-white text-decoration-none">GitHub</a> | 
+                <a href="https://linkedin.com/in/твой_аккаунт" class="text-white text-decoration-none">LinkedIn</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    <script>
+        const phrases = [
+            "Создаю сайты на Flask и Django",
+            "Решаю задачи любой сложности",
+            "Находю ответы там, где другие не могут",
+            "Делаю веб-приложения с нуля"
+        ];
+
+        let index = 0;
+        const dynamicText = document.createElement('p');
+        dynamicText.className = 'lead text-primary fw-bold mt-3';
+        dynamicText.id = 'dynamic-phrase';
+        document.querySelector('.hero .container').appendChild(dynamicText);
+
+        function updateText() {
+            dynamicText.classList.remove('animate__fadeIn');
+            void dynamicText.offsetWidth;
+            dynamicText.classList.add('animate__animated', 'animate__fadeIn');
+            dynamicText.textContent = phrases[index];
+            index = (index + 1) % phrases.length;
+        }
+
+        setInterval(updateText, 3000);
+        updateText();
+    </script>

@@ -1,0 +1,12 @@
+
+msgid "Home — Portfolio"
+msgstr "Home — Portfolio"
+
+msgid "Code that solves your problems"
+msgstr "Code that solves your problems"
+
+msgid "Projects"
+msgstr "Projects"
+
+msgid "Services"
+msgstr "Services"
