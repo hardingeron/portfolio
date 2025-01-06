@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе "Уютный уголок"</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Свой CSS -->
+    <!-- <link rel="stylesheet" href="/static/css/style.css"> -->
+</head>
+<body>
+    <!-- Главный экран -->
+    <section class="hero bg-dark text-white text-center py-5" style="background-image: url('/static/img/cafe-hero.jpg'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h1 class="display-4 animate__animated animate__fadeInDown">Кафе "Уютный уголок"</h1>
+            <p class="lead animate__animated animate__fadeInUp">Самый вкусный кофе в городе</p>
+            <a href="#menu" class="btn btn-primary btn-lg mt-3 animate__animated animate__fadeIn">Посмотреть меню</a>
+        </div>
+    </section>
+
+    <!-- О нас -->
+    <section class="about py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">О нас</h2>
+            <p class="text-center">Кафе "Уютный уголок" — это место, где встречаются уют и вкус. Мы предлагаем нашим гостям лучшие блюда и напитки, приготовленные с любовью.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/static/img/cafe.jpeg" class="img-fluid rounded" alt="Интерьер">
+                </div>
+                <div class="col-md-6">
+                    <p>Мы гордимся нашей уютной атмосферой и внимательным обслуживанием. Приходите к нам, чтобы насладиться моментом!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Меню -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Наше меню</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/static/img/coffee.jpg" class="card-img-top" alt="Капучино">
+                        <div class="card-body">
+                            <h5 class="card-title">Капучино</h5>
+                            <p class="card-text">Нежный и ароматный кофе с молочной пенкой.</p>
+                            <p class="text-primary">Цена: 150₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/static/img/dessert.jpg" class="card-img-top" alt="Десерт">
+                        <div class="card-body">
+                            <h5 class="card-title">Шоколадный десерт</h5>
+                            <p class="card-text">Богатый вкус шоколада для истинных гурманов.</p>
+                            <p class="text-primary">Цена: 200₽</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/static/img/salad.jpg" class="card-img-top" alt="Салат">
+                        <div class="card-body">
+                            <h5 class="card-title">Салат "Цезарь"</h5>
+                            <p class="card-text">Классический салат с курицей, сыром и свежими овощами.</p>
+                            <p class="text-primary">Цена: 250₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts py-5 bg-dark text-white">
+        <div class="container">
+            <h2 class="text-center mb-4">Контакты</h2>
+            <p class="text-center">Адрес: ул. Центральная, д. 10, Москва</p>
+            <p class="text-center">Телефон: <a href="tel:+79990000000" class="text-white">+7 (999) 000-00-00</a></p>
+            <div class="map mt-4">
+                <iframe src="https://www.google.com/maps/embed" width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>&copy; 2025 Кафе "Уютный уголок". Все права защищены.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

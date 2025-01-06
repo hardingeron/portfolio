@@ -15,6 +15,14 @@ babel = Babel(app)
 def home():
     return render_template('index.html')
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+@app.route('/projects/cafe')
+def cafe():
+    return render_template('cafe.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
     
