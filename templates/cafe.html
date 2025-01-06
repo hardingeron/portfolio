@@ -9,33 +9,59 @@
     <!-- Animate.css -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <!-- Свой CSS -->
-    <!-- <link rel="stylesheet" href="/static/css/style.css"> -->
+    <link rel="stylesheet" href="/static/css/cafe.css">
 </head>
 <body>
     <!-- Главный экран -->
-    <section class="hero bg-dark text-white text-center py-5" style="background-image: url('/static/img/cafe-hero.jpg'); background-size: cover; background-position: center;">
+    <section class="hero bg-dark text-white text-center py-5" style="background-image: url('/static/img/cafe-header.jpg'); background-size: cover; background-position: center;">
         <div class="container">
-            <h1 class="display-4 animate__animated animate__fadeInDown">Кафе "Уютный уголок"</h1>
-            <p class="lead animate__animated animate__fadeInUp">Самый вкусный кофе в городе</p>
-            <a href="#menu" class="btn btn-primary btn-lg mt-3 animate__animated animate__fadeIn">Посмотреть меню</a>
+            <h1 class="display-4 animate__animated animate__fadeInDown colorHeader">Кафе "Уютный уголок"</h1>
+            <p class="lead animate__animated animate__fadeInUp colorHeader">
+                Самый вкусный кофе в городе
+            </p>
+            <a href="#menu" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Посмотреть меню</a>
+            <a href="#delivery" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Заказать доставку</a>
+            <a href="#hours" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Рабочие часы</a>
+            <a href="#review" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Оставить отзыв</a>
+            
         </div>
     </section>
 
-    <!-- О нас -->
-    <section class="about py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4">О нас</h2>
-            <p class="text-center">Кафе "Уютный уголок" — это место, где встречаются уют и вкус. Мы предлагаем нашим гостям лучшие блюда и напитки, приготовленные с любовью.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="/static/img/cafe.jpeg" class="img-fluid rounded" alt="Интерьер">
+<!-- О нас -->
+<section class="about py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">О нас</h2>
+        <p class="text-center text-muted mb-5 animate__animated animate__fadeInUp">
+            Кафе "Уютный уголок" — это место, где уют и вдохновение встречаются с ароматом свежезаваренного кофе. Здесь можно спокойно работать или встретиться с друзьями, наслаждаясь не только кофе, но и вкуснейшими десертами и легкими закусками. Мы уверены, что идеальный кофе — это не просто напиток, а ритуал, который подарит вам заряд бодрости и отличное настроение. Загляните к нам и сделайте свой день особенным!
+        </p>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="card border-0 shadow-lg">
+                    <img src="/static/img/cafe.jpeg" class="img-fluid rounded-top" alt="Интерьер">
                 </div>
-                <div class="col-md-6">
-                    <p>Мы гордимся нашей уютной атмосферой и внимательным обслуживанием. Приходите к нам, чтобы насладиться моментом!</p>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-lg p-4">
+                    <p class="lead">Кафе "Уютный уголок" работает уже более 5 лет, создавая атмосферу уюта и тепла для своих гостей. Все началось с небольшой кофейни в центре города, где мы стремились создать место, куда хочется возвращаться. За эти годы мы стали любимым уголком для многих, кто ценит хороший кофе, уютную атмосферу и внимательное обслуживание. Мы гордимся тем, что можем предложить вам не только невероятно вкусные напитки, но и атмосферу, где каждый момент — особенный. Приходите и окунитесь в нашу историю, наслаждайтесь кофе и создавайте свои собственные воспоминания с нами!</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Отзывы -->
+<section id="reviews" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
+        <div id="reviews-container" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Отзывы будут динамически добавлены сюда с помощью JavaScript -->
+        </div>
+        <div class="text-center mt-4">
+            <a href="#leave-review" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#leave-review">Оставить отзыв</a>
+        </div>
+    </div>
+</section>
+
 
     <!-- Меню -->
     <section id="menu" class="py-5">
@@ -44,7 +70,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/static/img/coffee.jpg" class="card-img-top" alt="Капучино">
+                        <img src="/static/img/capu.jpg" class="card-img-top" alt="Капучино">
                         <div class="card-body">
                             <h5 class="card-title">Капучино</h5>
                             <p class="card-text">Нежный и ароматный кофе с молочной пенкой.</p>
@@ -54,7 +80,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/static/img/dessert.jpg" class="card-img-top" alt="Десерт">
+                        <img src="/static/img/cho.jpeg" class="card-img-top" alt="Десерт">
                         <div class="card-body">
                             <h5 class="card-title">Шоколадный десерт</h5>
                             <p class="card-text">Богатый вкус шоколада для истинных гурманов.</p>
@@ -64,7 +90,7 @@
                 </div>
                 <div class="col">
                     <div class="card h-100">
-                        <img src="/static/img/salad.jpg" class="card-img-top" alt="Салат">
+                        <img src="/static/img/salad.jpeg" class="card-img-top" alt="Салат">
                         <div class="card-body">
                             <h5 class="card-title">Салат "Цезарь"</h5>
                             <p class="card-text">Классический салат с курицей, сыром и свежими овощами.</p>
@@ -93,5 +119,34 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <!-- Модальное окно для отправки отзыва -->
+    <div class="modal fade" id="leave-review" tabindex="-1" aria-labelledby="leaveReviewLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="leaveReviewLabel">Оставить отзыв</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Ваше имя</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="review" class="form-label">Ваш отзыв</label>
+                            <textarea class="form-control" id="review" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-custom w-100">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/cafe/reviewScript.js"></script>
 </body>
 </html>

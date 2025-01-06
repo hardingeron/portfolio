@@ -1,0 +1,53 @@
+.colorHeader {
+    color: #747474;
+    font-family: 'Lora', serif;
+}
+
+/* Кастомизация кнопок */
+.btn-custom {
+    min-width: 200px;
+    background-color: #6c5ce7; /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста */
+    border-radius: 30px; /* Скругленные углы */
+    padding: 12px 30px; /* Размер кнопки */
+    font-size: 14px; /* Размер шрифта */
+    font-weight: 400; /* Жирный шрифт */
+    transition: all 0.3s ease; /* Плавные анимации */
+    text-transform: uppercase; /* Преобразование текста в верхний регистр */
+    border: none; /* Убираем стандартную рамку */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для глубины */
+}
+
+.btn-custom:hover {
+    background-color: #a29bfe; /* Цвет кнопки при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки при наведении */
+}
+
+.btn-custom:active {
+    background-color: #6c5ce7; /* Цвет кнопки при нажатии */
+    transform: scale(0.98); /* Уменьшение кнопки при нажатии */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшаем тень при нажатии */
+}
+
+
+.card {
+    border-radius: 15px;
+}
+
+.card img {
+    border-radius: 15px 15px 0 0;
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+
+
+}
+
+
