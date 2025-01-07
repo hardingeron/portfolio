@@ -32,6 +32,7 @@
 
 .card {
     border-radius: 15px;
+    min-height: 200px;
 }
 
 .card img {
@@ -46,8 +47,29 @@
 
 h2 {
     font-family: 'Lora', serif;
+}
 
-
+.blockquote-footer {
+    position: absolute;
+    bottom: 10px; /* Отступ от нижней границы */
+    right: 10px; /* Опционально: отступ от правой границы */
+    font-style: italic;
 }
 
 
+#reviews-container .col {
+    transition: opacity 0.5s ease-in-out; /* Плавное появление */
+}
+
+
+
+
+.collapse {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.collapse.show {
+    display: flex;
+    flex-wrap: wrap;
+}

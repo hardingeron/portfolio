@@ -21,8 +21,8 @@
             </p>
             <a href="#menu" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Посмотреть меню</a>
             <a href="#delivery" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Заказать доставку</a>
-            <a href="#hours" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Рабочие часы</a>
-            <a href="#review" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Оставить отзыв</a>
+            <a href="#contacts" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Контакты</a>
+            <a href="#reviews" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Оставить отзыв</a>
             
         </div>
     </section>
@@ -63,47 +63,87 @@
 </section>
 
 
-    <!-- Меню -->
-    <section id="menu" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Наше меню</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/static/img/capu.jpg" class="card-img-top" alt="Капучино">
-                        <div class="card-body">
-                            <h5 class="card-title">Капучино</h5>
-                            <p class="card-text">Нежный и ароматный кофе с молочной пенкой.</p>
-                            <p class="text-primary">Цена: 150₽</p>
-                        </div>
+<!-- Меню -->
+<section id="menu" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Наше меню</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Основные позиции меню -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/img/capu.jpg" class="card-img-top" alt="Капучино">
+                    <div class="card-body">
+                        <h5 class="card-title">Капучино</h5>
+                        <p class="card-text">Нежный и ароматный кофе с молочной пенкой.</p>
+                        <p class="text-primary">Цена: 150₽</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/static/img/cho.jpeg" class="card-img-top" alt="Десерт">
-                        <div class="card-body">
-                            <h5 class="card-title">Шоколадный десерт</h5>
-                            <p class="card-text">Богатый вкус шоколада для истинных гурманов.</p>
-                            <p class="text-primary">Цена: 200₽</p>
-                        </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/img/cho.jpeg" class="card-img-top" alt="Десерт">
+                    <div class="card-body">
+                        <h5 class="card-title">Шоколадный десерт</h5>
+                        <p class="card-text">Богатый вкус шоколада для истинных гурманов.</p>
+                        <p class="text-primary">Цена: 200₽</p>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <img src="/static/img/salad.jpeg" class="card-img-top" alt="Салат">
-                        <div class="card-body">
-                            <h5 class="card-title">Салат "Цезарь"</h5>
-                            <p class="card-text">Классический салат с курицей, сыром и свежими овощами.</p>
-                            <p class="text-primary">Цена: 250₽</p>
-                        </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/img/salad.jpeg" class="card-img-top" alt="Салат">
+                    <div class="card-body">
+                        <h5 class="card-title">Салат "Цезарь"</h5>
+                        <p class="card-text">Классический салат с курицей, сыром и свежими овощами.</p>
+                        <p class="text-primary">Цена: 250₽</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+
+        <!-- Дополнительные позиции меню -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 collapse" id="additional-menu">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/img/latte.jpg" class="card-img-top" alt="Латте">
+                    <div class="card-body">
+                        <h5 class="card-title">Латте</h5>
+                        <p class="card-text">Кофе с большим количеством молока и нежной пенкой.</p>
+                        <p class="text-primary">Цена: 180₽</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/img/croissant.jpeg" class="card-img-top" alt="Круассан">
+                    <div class="card-body">
+                        <h5 class="card-title">Круассан</h5>
+                        <p class="card-text">Воздушный и хрустящий круассан с миндальным кремом.</p>
+                        <p class="text-primary">Цена: 120₽</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/img/soup.jpg" class="card-img-top" alt="Суп">
+                    <div class="card-body">
+                        <h5 class="card-title">Томатный суп</h5>
+                        <p class="card-text">Ароматный суп из свежих томатов с зеленью.</p>
+                        <p class="text-primary">Цена: 300₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Кнопка для управления видимостью -->
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" id="toggle-menu-btn">Больше</button>
+        </div>
+    </div>
+</section>
 
     <!-- Контакты -->
-    <section class="contacts py-5 bg-dark text-white">
+    <section class="contacts py-5 bg-dark text-white" id="contacts">
         <div class="container">
             <h2 class="text-center mb-4">Контакты</h2>
             <p class="text-center">Адрес: ул. Центральная, д. 10, Москва</p>
@@ -148,5 +188,24 @@
     </div>
 
     <script src="/static/js/cafe/reviewScript.js"></script>
+
+
+    <script>
+        const toggleMenuBtn = document.getElementById("toggle-menu-btn");
+const additionalMenu = document.getElementById("additional-menu");
+
+toggleMenuBtn.addEventListener("click", () => {
+    if (additionalMenu.classList.contains("show")) {
+        // Скрываем дополнительные позиции
+        additionalMenu.classList.remove("show");
+        toggleMenuBtn.textContent = "Больше";
+    } else {
+        // Показываем дополнительные позиции
+        additionalMenu.classList.add("show");
+        toggleMenuBtn.textContent = "Скрыть";
+    }
+});
+
+    </script>
 </body>
 </html>
