@@ -19,12 +19,36 @@ def home():
 def projects():
     return render_template('projects.html')
 
+@app.route('/projects/blog')
+def blog():
+    return render_template('/blog/blog.html')
+
+@app.route('/projects/fitness')
+def fitness():
+    return render_template('/fitness/fitness.html')
+
+@app.route('/projects/storage')
+def storage():
+    return render_template('/storage/storage.html')
+
+@app.route('/projects/blog/post')
+def post():
+    return render_template('/blog/post.html')
+
+@app.route('/projects/blog/about')
+def about():
+    return render_template('/blog/about.html')
+
+@app.route('/projects/photographer')
+def photography():
+    return render_template('/photographer/photographer.html')
+
 @app.route('/projects/cafe')
 def cafe():
     return render_template('cafe.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=True)
     
 # Функция для выбора языка
 

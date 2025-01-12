@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фитнес-центр</title>
+  <!-- Подключаем Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero {
+      background-image: linear-gradient(to right, rgba(36,57,73,0.9), rgba(81,127,164,0.9)), url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .card-hover:hover {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Главная секция -->
+  <section class="hero">
+    <div>
+      <h1 class="display-4">Преобразите свою жизнь</h1>
+      <p class="lead">Присоединяйтесь к нашему премиум фитнес-сообществу и достигайте своих целей с помощью экспертов</p>
+      <a href="#plans" class="btn btn-primary btn-lg">Начать путь</a>
+    </div>
+  </section>
+
+  <!-- Планы тренировок -->
+  <section id="plans" class="py-5">
+    <div class="container text-center">
+      <h2 class="h2">Планы тренировок</h2>
+      <p>Выберите лучший план для вашего фитнес-пути</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Базовый</h5>
+              <p class="card-text">Идеально для начинающих</p>
+              <p class="display-6">$49 / месяц</p>
+              <ul>
+                <li>Доступ к оборудованию</li>
+                <li>Базовые тренировки</li>
+                <li>Доступ к шкафчикам</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Выбрать</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Профессиональный</h5>
+              <p class="card-text">Самый популярный выбор</p>
+              <p class="display-6">$99 / месяц</p>
+              <ul>
+                <li>Все функции базового</li>
+                <li>Групповые тренировки</li>
+                <li>Питание и советы</li>
+                <li>1 занятие с тренером в месяц</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Выбрать</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5 class="card-title">Элитный</h5>
+              <p class="card-text">Для серьезных атлетов</p>
+              <p class="display-6">$199 / месяц</p>
+              <ul>
+                <li>Все функции профессионального</li>
+                <li>Безлимитные занятия с тренером</li>
+                <li>Доступ к спа для восстановления</li>
+                <li>Приоритетное бронирование</li>
+              </ul>
+              <a href="#" class="btn btn-primary">Выбрать</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Наш зал -->
+  <section id="gym" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="h2">Наш зал</h2>
+      <p>Современное оборудование в роскошной обстановке</p>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48" class="img-fluid rounded" alt="Зал">
+        </div>
+        <div class="col-md-6">
+          <h5>Основная зона тренировок</h5>
+          <p>Обширная зона для тренировки всех групп мышц, оборудованная современными тренажерами.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Тренеры -->
+  <section id="trainers" class="py-5">
+    <div class="container text-center">
+      <h2 class="h2">Наши тренеры</h2>
+      <p>Работайте с профессионалами, которые заботятся о вашем успехе</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <img src="https://images.unsplash.com/photo-1611672585731-fa10603fb9e0" class="card-img-top" alt="Тренер Сара">
+            <div class="card-body">
+              <h5 class="card-title">Сара Джонсон</h5>
+              <p class="card-text">Силовые тренировки и кондиционирование</p>
+              <p>Сертифицированный тренер с 8-летним опытом в области фитнеса.</p>
+              <a href="#" class="btn btn-outline-primary">Записаться на занятие</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <img src="https://images.unsplash.com/photo-1621346563228-17ebd720e7da" class="card-img-top" alt="Тренер Майк">
+            <div class="card-body">
+              <h5 class="card-title">Майк Чен</h5>
+              <p class="card-text">Кроссфит и HIIT</p>
+              <p>Бывший атлет, специализирующийся на высокоинтенсивных тренировках.</p>
+              <a href="#" class="btn btn-outline-primary">Записаться на занятие</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <img src="https://images.unsplash.com/photo-1609899464926-c2692e75f962" class="card-img-top" alt="Тренер Эмма">
+            <div class="card-body">
+              <h5 class="card-title">Эмма Уилсон</h5>
+              <p class="card-text">Йога и восстановление</p>
+              <p>Сертифицированный инструктор по йоге и специалист по восстановлению.</p>
+              <a href="#" class="btn btn-outline-primary">Записаться на занятие</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подключаем Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог - Посты</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/blog/post.css">
+
+  
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Боковая панель -->
+    <aside class="d-none d-md-block border-end p-4" style="width: 800px;">
+      <div class="text-center mb-4">
+        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">JB</div>
+        <h5 class="mt-2">Мой Блог</h5>
+      </div>
+      <nav class="nav flex-column">
+        <a href="/projects/blog" class="nav-link active"><i class="bi bi-house me-2"></i>Главная</a>
+        <a href="/projects/blog/post" class="nav-link"><i class="bi bi-journal-text me-2"></i>Блог</a>
+        <a href="/projects/blog/about" class="nav-link"><i class="bi bi-person me-2"></i>Обо мне</a>
+        <a href="#" class="nav-link"><i class="bi bi-envelope me-2"></i>Контакты</a>
+      </nav>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="flex-grow-1 p-4">
+      <section class="text-center mb-5">
+        <h1 class="mb-3">Посты блога</h1>
+        <p class="text-muted">Изучите мои последние статьи и вдохновляйтесь новыми идеями.</p>
+      </section>
+
+      <section class="row g-4 justify-content-center">
+        <!-- Пост 1 -->
+        <div class="col-12 col-md-8 col-lg-8 mx-auto">
+          <div class="post-card">
+            <img src="/static/img/post1.jpg" class="card-img-top" alt="Изображение поста">
+            <div class="card-body">
+              <h5 class="card-title">Заголовок поста 1</h5>
+              <p class="card-text">Краткое описание поста, чтобы привлечь внимание к содержимому и вызвать интерес.</p>
+              <a href="#" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-right-circle me-2"></i>Читать далее
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Пост 2 -->
+        <div class="col-12 col-md-8 col-lg-8 mx-auto">
+          <div class="post-card">
+            <img src="/static/img/post2.jpg" class="card-img-top" alt="Изображение поста">
+            <div class="card-body">
+              <h5 class="card-title">Заголовок поста 2</h5>
+              <p class="card-text">Здесь будет краткое описание, чтобы заинтересовать читателя и побудить его перейти по ссылке.</p>
+              <a href="#" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-right-circle me-2"></i>Читать далее
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Пост 3 -->
+        <div class="col-12 col-md-8 col-lg-8 mx-auto">
+          <div class="post-card">
+            <img src="/static/img/post3.jpg" class="card-img-top" alt="Изображение поста">
+            <div class="card-body">
+              <h5 class="card-title">Заголовок поста 3</h5>
+              <p class="card-text">Здесь будет краткое описание поста, чтобы привлечь внимание к содержимому.</p>
+              <a href="#" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-right-circle me-2"></i>Читать далее
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Пост 4 -->
+        <div class="col-12 col-md-8 col-lg-8 mx-auto">
+          <div class="post-card">
+            <img src="/static/img/post4.jpg" class="card-img-top" alt="Изображение поста">
+            <div class="card-body">
+              <h5 class="card-title">Заголовок поста 4</h5>
+              <p class="card-text">Краткое описание поста, чтобы привлечь внимание к содержимому и побудить к действиям.</p>
+              <a href="#" class="btn btn-outline-primary">
+                <i class="bi bi-arrow-right-circle me-2"></i>Читать далее
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+  <!-- Мобильное меню -->
+  <nav class="navbar navbar-expand-md d-md-none bg-light fixed-bottom py-2">
+    <div class="container-fluid justify-content-around">
+      <a href="index.html" class="nav-link text-center nav-item-hover">
+        <i class="bi bi-house" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Главная</span>
+      </a>
+      <a href="posts.html" class="nav-link text-center nav-item-hover active">
+        <i class="bi bi-journal-text" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Блог</span>
+      </a>
+      <a href="#" class="nav-link text-center nav-item-hover">
+        <i class="bi bi-person" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Обо мне</span>
+      </a>
+      <a href="#" class="nav-link text-center nav-item-hover">
+        <i class="bi bi-envelope" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Контакты</span>
+      </a>
+    </div>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

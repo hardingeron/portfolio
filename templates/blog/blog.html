@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мой Блог</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/blog.css">
+</head>
+<body>
+  <div class="d-flex">
+    <!-- Боковая панель -->
+    <aside class="d-none d-md-block border-end p-4" style="width: 250px;">
+      <div class="text-center mb-4">
+        <div class="rounded-circle bg-primary text-white d-inline-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">JB</div>
+        <h5 class="mt-2">Мой Блог</h5>
+      </div>
+      <nav class="nav flex-column">
+        <a href="#" class="nav-link active"><i class="bi bi-house me-2"></i>Главная</a>
+        <a href="/projects/blog/post" class="nav-link"><i class="bi bi-journal-text me-2"></i>Блог</a>
+        <a href="/projects/blog/about" class="nav-link"><i class="bi bi-person me-2"></i>Обо мне</a>
+        <a href="#" class="nav-link"><i class="bi bi-envelope me-2"></i>Контакты</a>
+      </nav>
+    </aside>
+
+    <!-- Основной контент -->
+    <main class="flex-grow-1 p-4">
+      <section class="text-center mb-5">
+        <div class="rounded-circle overflow-hidden mx-auto" style="width: 100px; height: 100px;">
+          <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" class="img-fluid" alt="Профиль">
+        </div>
+        <h1 class="mt-3">Добро пожаловать в мой блог</h1>
+        <p class="text-muted">Место, где я делюсь своими мыслями о технологиях, дизайне и жизни.</p>
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="#" class="btn btn-primary">
+            <i class="bi bi-book me-2"></i>Читать блог
+          </a>
+          <a href="#" class="btn btn-outline-primary">
+            <i class="bi bi-info-circle me-2"></i>Обо мне
+          </a>
+        </div>
+      </section>
+
+      <section class="row g-4">
+        <div class="col-md-6">
+          <div class="card card-hover p-4 border">
+            <h5 class="card-title"><i class="bi bi-card-text me-2"></i>Последние записи</h5>
+            <p class="text-muted">Ознакомьтесь с моими последними статьями и будьте в курсе моих новых идей.</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-arrow-right-circle me-2"></i>Посмотреть записи
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card card-hover p-4 border">
+            <h5 class="card-title"><i class="bi bi-telephone me-2"></i>Связаться со мной</h5>
+            <p class="text-muted">У вас есть вопрос или вы хотите сотрудничать? Я буду рад вашему обращению.</p>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-chat-dots me-2"></i>Написать мне
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Мобильное меню -->
+  <nav class="navbar navbar-expand-md d-md-none bg-light fixed-bottom py-2">
+    <div class="container-fluid justify-content-around">
+      <a href="#" class="nav-link text-center nav-item-hover">
+        <i class="bi bi-house" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Главная</span>
+      </a>
+      <a href="#" class="nav-link text-center nav-item-hover">
+        <i class="bi bi-journal-text" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Блог</span>
+      </a>
+      <a href="#" class="nav-link text-center nav-item-hover">
+        <i class="bi bi-person" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Обо мне</span>
+      </a>
+      <a href="#" class="nav-link text-center nav-item-hover">
+        <i class="bi bi-envelope" style="font-size: 1.5rem;"></i>
+        <span class="d-block" style="font-size: 0.75rem;">Контакты</span>
+      </a>
+    </div>
+  </nav>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

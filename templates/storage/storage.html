@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Система Управления Складом</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .sidebar {
+      width: 250px;
+      background-color: #fff;
+      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+    }
+    .sidebar .nav-link {
+      padding: 10px 20px;
+      color: #555;
+    }
+    .sidebar .nav-link.active {
+      background-color: #1e40af;
+      color: white;
+    }
+    .content {
+      margin-left: 250px;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .table-responsive {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .table th, .table td {
+      vertical-align: middle;
+      font-size: 14px; /* Уменьшаем размер текста */
+      padding: 8px; /* Уменьшаем отступы */
+    }
+    .table th {
+      background-color: #f8f9fa;
+    }
+
+    /* Адаптивность для мобильных */
+    @media (max-width: 768px) {
+      .sidebar {
+        width: 100%;
+        position: relative;
+      }
+      .content {
+        margin-left: 0;
+        padding-top: 10px;
+      }
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .table th, .table td {
+        font-size: 12px;
+        padding: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h1 class="text-primary text-center">Склад MS</h1>
+    <nav class="nav flex-column">
+      <a class="nav-link active" href="#">Главная</a>
+      <a class="nav-link" href="#">Продукты</a>
+      <a class="nav-link" href="#">Добавить продукт</a>
+      <a class="nav-link" href="#">Удалить продукт</a>
+      <a class="nav-link" href="#">Проверка сроков годности</a>
+      <a class="nav-link" href="#">Инвентарь</a>
+      <a class="nav-link" href="#">Отгрузки</a>
+      <a class="nav-link" href="#">Отчёты</a>
+      <a class="nav-link" href="#">Пользователи</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div class="header">
+      <h2>Главная</h2>
+      <button class="btn btn-outline-secondary">Уведомления</button>
+    </div>
+
+    <div class="mt-4">
+      <h3>Обзор Инвентаря</h3>
+      <div>
+        <canvas id="inventoryChart" width="400" height="200"></canvas>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <h3>Продукты</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-striped table-sm"> <!-- Добавлен класс table-sm -->
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Описание</th>
+              <th>Количество</th>
+              <th>Дата истечения</th>
+              <th>Местоположение</th>
+              <th>Категория</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Продукт A</td>
+              <td>Описание продукта A</td>
+              <td>100</td>
+              <td>2024-12-31</td>
+              <td>Проход 1, Полка 2</td>
+              <td>Электроника</td>
+            </tr>
+            <tr>
+              <td>Продукт B</td>
+              <td>Описание продукта B</td>
+              <td>50</td>
+              <td>2024-11-20</td>
+              <td>Проход 2, Полка 1</td>
+              <td>Кухонные принадлежности</td>
+            </tr>
+            <tr>
+              <td>Продукт C</td>
+              <td>Описание продукта C</td>
+              <td>200</td>
+              <td>2025-01-15</td>
+              <td>Проход 3, Полка 4</td>
+              <td>Одежда</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Данные для графика
+    const data = {
+      labels: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+      datasets: [{
+        label: 'Запасы',
+        data: [400, 300, 600, 800, 500, 700, 200, 300, 400, 500, 600, 700],
+        backgroundColor: '#1e40af',
+      }]
+    };
+
+    const ctx = document.getElementById('inventoryChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: data,
+    });
+  </script>
+</body>
+</html>
