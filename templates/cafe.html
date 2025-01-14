@@ -14,16 +14,16 @@
 <body>
     <!-- Главный экран -->
     <section class="hero bg-dark text-white text-center py-5" style="background-image: url('/static/img/cafe-header.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay"></div> <!-- Полупрозрачная подложка -->
         <div class="container">
             <h1 class="display-4 animate__animated animate__fadeInDown colorHeader">Кафе "Уютный уголок"</h1>
-            <p class="lead animate__animated animate__fadeInUp colorHeader">
-                Самый вкусный кофе в городе
-            </p>
-            <a href="#menu" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Посмотреть меню</a>
-            <a href="#delivery" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Заказать доставку</a>
-            <a href="#contacts" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Контакты</a>
-            <a href="#reviews" class="btn btn-custom mt-3 animate__animated animate__fadeIn">Оставить отзыв</a>
-            
+            <p class="lead animate__animated animate__fadeInUp colorHeader">Самый вкусный кофе в городе</p>
+            <div class="btn-group">
+                <a href="#menu" class="btn btn-custom animate__animated animate__fadeIn">Посмотреть меню</a>
+                <a href="#delivery" class="btn btn-custom animate__animated animate__fadeIn">Заказать доставку</a>
+                <a href="#contacts" class="btn btn-custom animate__animated animate__fadeIn">Контакты</a>
+                <a href="#reviews" class="btn btn-custom animate__animated animate__fadeIn">Оставить отзыв</a>
+            </div>
         </div>
     </section>
 
@@ -134,10 +134,13 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
 
         <!-- Кнопка для управления видимостью -->
         <div class="text-center mt-4">
-            <button class="btn btn-primary" id="toggle-menu-btn">Больше</button>
+            <button class="btn btn-custom animate__animated animate__fadeIn" id="toggle-menu-btn">Больше</button>
         </div>
     </div>
 </section>
@@ -209,3 +212,6 @@ toggleMenuBtn.addEventListener("click", () => {
     </script>
 </body>
 </html>
+
+
+

@@ -6,6 +6,7 @@ app = Flask(__name__)
 # Настройки Flask-Babel
 app.config['BABEL_DEFAULT_LOCALE'] = 'ru'  # Язык по умолчанию (грузинский)
 app.config['BABEL_SUPPORTED_LOCALES'] = ['en', 'ka', 'ru']  # Поддерживаемые языки
+app.secret_key = 'wefiu#$!*(wiefwefiu*^@!(@#&^!hqw73197831g167*G&!*#G6168724g*&!*GT#8dh374g'
 
 babel = Babel(app)
 

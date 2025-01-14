@@ -32,3 +32,33 @@ footer {
     color: white; /* Цвет текста */
     padding: 1rem 0;
 }
+
+
+
+/* Стили для выпадающего меню языка */
+.dropdown-menu {
+    background-color: #343a40; /* Цвет фона меню */
+    border: none; /* Убираем границы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+.dropdown-item {
+    color: #ffffff; /* Цвет текста */
+    padding: 10px 20px; /* Отступы */
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #495057; /* Цвет фона при наведении */
+    color: #ffffff; /* Цвет текста при наведении */
+}
+
+.btn-outline-light {
+    border-color: #ffffff; /* Цвет рамки кнопки */
+    color: #ffffff; /* Цвет текста кнопки */
+}
+
+.btn-outline-light:hover {
+    background-color: #ffffff; /* Цвет фона при наведении */
+    color: #343a40; /* Цвет текста при наведении */
+}

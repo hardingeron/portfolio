@@ -16,17 +16,27 @@
             <div class="container-fluid">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                     <h1 class="h3 m-0 text-center text-md-start">{{ _('Code that solves your problems') }}</h1>
-                    <nav class="text-center mt-2 mt-md-0">
-                        <a href="/projects" class="text-white text-decoration-none mx-2">{{ _('Projects') }}</a>
-                        <a href="/services" class="text-white text-decoration-none mx-2">{{ _('Services') }}</a>
-                        <a href="/contacts" class="text-white text-decoration-none mx-2">Контакты</a>
-                    </nav>
+                    <div class="d-flex align-items-center mt-2 mt-md-0">
+                        <nav class="text-center me-3">
+                            <a href="/projects" class="text-white text-decoration-none mx-2">{{ _('Projects') }}</a>
+                            <a href="/services" class="text-white text-decoration-none mx-2">{{ _('Services') }}</a>
+                            <a href="/contacts" class="text-white text-decoration-none mx-2">Контакты</a>
+                        </nav>
+                        <!-- Dropdown для выбора языка -->
+                        <div class="dropdown">
+                            <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                {{ _('Language') }}
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
+                                <li><a class="dropdown-item" href="?lang=en">English</a></li>
+                                <li><a class="dropdown-item" href="?lang=ru">Русский</a></li>
+                                <li><a class="dropdown-item" href="?lang=ka">ქართული</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
-        <a href="?lang=en">{{ _('English') }}</a>
-        <a href="?lang=ru">{{ _('Русский') }}</a>
-        <a href="?lang=ka">{{ _('ქართული') }}</a>
 
         <div class="content-wrapper flex-grow-1">
             <!-- Hero Section -->
