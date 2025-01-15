@@ -107,3 +107,34 @@ h2 {
     height: 300px; /* Устанавливаем фиксированную высоту для всех изображений */
     object-fit: cover; /* Изображения заполняют контейнер по высоте, обрезая лишнее */
 }
+
+.pad {
+    padding-top: 10px;
+}
+
+
+
+
+.hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой */
+    z-index: 1; /* Убедитесь, что слой находится под текстом */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Текст находится выше затемняющего слоя */
+}

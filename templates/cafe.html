@@ -13,16 +13,16 @@
 </head>
 <body>
     <!-- Главный экран -->
-    <section class="hero bg-dark text-white text-center py-5" style="background-image: url('/static/img/cafe-header.jpg'); background-size: cover; background-position: center;">
+    <section class="hero bg-dark text-white text-center py-5" style="background-image: url('/static/img/cafe/cafe-header.jpg'); background-size: cover; background-position: center;">
         <div class="overlay"></div> <!-- Полупрозрачная подложка -->
         <div class="container">
             <h1 class="display-4 animate__animated animate__fadeInDown colorHeader">Кафе "Уютный уголок"</h1>
             <p class="lead animate__animated animate__fadeInUp colorHeader">Самый вкусный кофе в городе</p>
             <div class="btn-group">
-                <a href="#menu" class="btn btn-custom animate__animated animate__fadeIn">Посмотреть меню</a>
-                <a href="#delivery" class="btn btn-custom animate__animated animate__fadeIn">Заказать доставку</a>
+                <a href="#menu" class="btn btn-custom animate__animated animate__fadeIn">Наше меню</a>
+                <a href="#delivery" class="btn btn-custom animate__animated animate__fadeIn">Бронь стола</a>
                 <a href="#contacts" class="btn btn-custom animate__animated animate__fadeIn">Контакты</a>
-                <a href="#reviews" class="btn btn-custom animate__animated animate__fadeIn">Оставить отзыв</a>
+                <a href="#reviews" class="btn btn-custom animate__animated animate__fadeIn">Отзывы</a>
             </div>
         </div>
     </section>
@@ -37,7 +37,7 @@
         <div class="row align-items-center">
             <div class="col-md-6">
                 <div class="card border-0 shadow-lg">
-                    <img src="/static/img/cafe.jpeg" class="img-fluid rounded-top" alt="Интерьер">
+                    <img src="/static/img/cafe/cafe.jpeg" class="img-fluid rounded-top" alt="Интерьер">
                 </div>
             </div>
             <div class="col-md-6">
@@ -71,7 +71,7 @@
             <!-- Основные позиции меню -->
             <div class="col">
                 <div class="card h-100">
-                    <img src="/static/img/capu.jpg" class="card-img-top" alt="Капучино">
+                    <img src="/static/img/cafe/capu.jpg" class="card-img-top" alt="Капучино">
                     <div class="card-body">
                         <h5 class="card-title">Капучино</h5>
                         <p class="card-text">Нежный и ароматный кофе с молочной пенкой.</p>
@@ -81,7 +81,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/static/img/cho.jpeg" class="card-img-top" alt="Десерт">
+                    <img src="/static/img/cafe/cho.jpeg" class="card-img-top" alt="Десерт">
                     <div class="card-body">
                         <h5 class="card-title">Шоколадный десерт</h5>
                         <p class="card-text">Богатый вкус шоколада для истинных гурманов.</p>
@@ -91,7 +91,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/static/img/salad.jpeg" class="card-img-top" alt="Салат">
+                    <img src="/static/img/cafe/salad.jpeg" class="card-img-top" alt="Салат">
                     <div class="card-body">
                         <h5 class="card-title">Салат "Цезарь"</h5>
                         <p class="card-text">Классический салат с курицей, сыром и свежими овощами.</p>
@@ -105,7 +105,7 @@
         <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 collapse" id="additional-menu">
             <div class="col">
                 <div class="card h-100">
-                    <img src="/static/img/latte.jpg" class="card-img-top" alt="Латте">
+                    <img src="/static/img/cafe/latte.jpeg" class="card-img-top" alt="Латте">
                     <div class="card-body">
                         <h5 class="card-title">Латте</h5>
                         <p class="card-text">Кофе с большим количеством молока и нежной пенкой.</p>
@@ -115,7 +115,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/static/img/croissant.jpeg" class="card-img-top" alt="Круассан">
+                    <img src="/static/img/cafe/cru.jpg" class="card-img-top" alt="Круассан">
                     <div class="card-body">
                         <h5 class="card-title">Круассан</h5>
                         <p class="card-text">Воздушный и хрустящий круассан с миндальным кремом.</p>
@@ -125,7 +125,7 @@
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/static/img/soup.jpg" class="card-img-top" alt="Суп">
+                    <img src="/static/img/cafe/soup.jpeg" class="card-img-top" alt="Суп">
                     <div class="card-body">
                         <h5 class="card-title">Томатный суп</h5>
                         <p class="card-text">Ароматный суп из свежих томатов с зеленью.</p>
@@ -135,14 +135,12 @@
             </div>
         </div>
     </div>
-</section>
 
-
-        <!-- Кнопка для управления видимостью -->
-        <div class="text-center mt-4">
-            <button class="btn btn-custom animate__animated animate__fadeIn" id="toggle-menu-btn">Больше</button>
-        </div>
+    <!-- Кнопка для управления видимостью -->
+    <div class="text-center mt-4">
+        <button class="btn btn-custom animate__animated animate__fadeIn" id="toggle-menu-btn">Больше</button>
     </div>
+</div>
 </section>
 
     <!-- Контакты -->
@@ -191,25 +189,8 @@
     </div>
 
     <script src="/static/js/cafe/reviewScript.js"></script>
+    <script src="/static/js/cafe/showHiddenMenuScript.js"></script>
 
-
-    <script>
-        const toggleMenuBtn = document.getElementById("toggle-menu-btn");
-const additionalMenu = document.getElementById("additional-menu");
-
-toggleMenuBtn.addEventListener("click", () => {
-    if (additionalMenu.classList.contains("show")) {
-        // Скрываем дополнительные позиции
-        additionalMenu.classList.remove("show");
-        toggleMenuBtn.textContent = "Больше";
-    } else {
-        // Показываем дополнительные позиции
-        additionalMenu.classList.add("show");
-        toggleMenuBtn.textContent = "Скрыть";
-    }
-});
-
-    </script>
 </body>
 </html>
 
