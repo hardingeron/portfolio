@@ -10,3 +10,7 @@ msgstr "Проекты"
 
 msgid "Services"
 msgstr "Услуги"
+
+msgid "Collection of Projects"
+msgstr "Коллекция проектов"
+

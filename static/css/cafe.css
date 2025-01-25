@@ -138,3 +138,107 @@ h2 {
     position: relative;
     z-index: 2; /* Текст находится выше затемняющего слоя */
 }
+
+
+
+
+
+
+
+
+
+
+/* Стили для модального окна */
+.modal-content {
+    background-color: #2e2e2e; /* Темный фон для окна */
+    border-radius: 10px; /* Скругленные углы */
+    color: #fff; /* Белый цвет текста */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень */
+    padding: 20px; /* Внутренние отступы */
+}
+
+/* Стили для кнопок в модальном окне */
+.btn-outline-custom {
+    display: flex;
+    flex-direction: column; /* Располагаем элементы вертикально */
+    justify-content: center; /* Выравниваем по центру */
+    align-items: center; /* Выравниваем по центру */
+    text-align: center; /* Выравниваем текст по центру */
+    padding: 15px;
+    font-size: 14px;
+    word-wrap: break-word; /* Переносим текст, если он не помещается */
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid #6f4410;
+    color: #6f4410;
+}
+
+.btn-outline-custom:hover {
+    background-color: #6f4410;
+    color: #fff;
+}
+
+.table-name {
+    font-size: 16px; /* Размер шрифта для названия стола */
+    font-weight: bold;
+}
+
+.table-capacity {
+    font-size: 12px; /* Размер шрифта для информации о количестве персон */
+    font-weight: normal;
+}
+
+/* Стили для кнопки закрытия */
+.btn-secondary {
+    background-color: #8a1418; /* Цвет фона кнопки */
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px; /* Округлые углы */
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ed1414; /* Изменение цвета при наведении */
+}
+
+/* Стили для модального фона (полупрозрачный) */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 767px) {
+    .modal-content {
+        padding: 10px; /* Меньше внутренних отступов */
+    }
+
+    .btn-outline-custom {
+        font-size: 12px; /* Меньший размер шрифта на мобильных устройствах */
+        padding: 10px; /* Меньше отступов */
+    }
+
+.table-name {
+    font-size: 14px; /* Размер шрифта для названия стола */
+    }
+
+    .modal-header h5 {
+        font-size: 16px; /* Меньший размер заголовка */
+    }
+
+    .modal-body {
+        padding: 10px; /* Меньше внутренних отступов */
+    }
+.table-capacity {
+    font-size: 10px; /* Размер шрифта для информации о количестве персон */
+    }
+}
+
+
+/* Стиль для выбранного стола */
+.btn-outline-custom.selected {
+    background-color: #6f4410; /* Цвет фона для выбранного стола */
+    color: #fff; /* Белый текст для выбранного стола */
+    border-color: #6f4410; /* Цвет рамки выбранного стола */
+}

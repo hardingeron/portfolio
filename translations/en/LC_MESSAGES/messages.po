@@ -10,3 +10,8 @@ msgstr "Projects"
 
 msgid "Services"
 msgstr "Services"
+
+msgid "Collection of Projects"
+msgstr "Collection of Projects"
+
+

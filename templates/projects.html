@@ -16,7 +16,7 @@
     <header class="bg-dark text-white py-3">
         <div class="container-fluid">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                <h1 class="h3 m-0 text-center text-md-start">Коллекция проектов</h1>
+                <h1 class="h3 m-0 text-center text-md-start">{{ _('Collection of Projects') }}</h1>
                 <nav class="text-center mt-2 mt-md-0">
                     <a href="/" class="text-white text-decoration-none mx-2">Главная</a>
                     <a href="/services" class="text-white text-decoration-none mx-2">Услуши</a>
@@ -30,72 +30,98 @@
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Карточка 1 -->
             <div class="col">
-                <div class="card h-100 shadow-sm animate__animated animate__fadeInLeft">
+                <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-1s">
                     <img src="/static/img/times-hexagon.png" class="card-img-top" alt="Визитка кафе">
                     <div class="card-body">
                         <h5 class="card-title">Визитка кафе</h5>
                         <p class="card-text">Стильная онлайн-визитка с меню, отзывами и формой бронирования.</p>
-                        <a href="/projects/cafe" class="btn btn-primary">Подробнее</a>
+                        <span class="badge bg-info">В разработке</span>
+                        <p class="card-review"><strong>Отзыв:</strong> "Прекрасный дизайн, все работает идеально!"</p>
+                        <a href="/projects/cafe" class="btn btn-primary">
+                            <i class="fas fa-info-circle"></i> Подробнее
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- Карточка 2 -->
             <div class="col">
-                <div class="card h-100 shadow-sm animate__animated animate__fadeInDown">
+                <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-1s">
                     <img src="/static/img/times-hexagon.png" class="card-img-top" alt="Склад предприятия">
                     <div class="card-body">
                         <h5 class="card-title">Склад предприятия</h5>
                         <p class="card-text">Система управления складами с отчетами и инвентаризацией.</p>
-                        <a href="/projects/storage" class="btn btn-primary">Подробнее</a>
+                        <span class="badge bg-info">В разработке</span>
+                        <p class="card-review"><strong>Отзыв:</strong> "Отличная система для управления складом!"</p>
+                        <a href="/projects/storage" class="btn btn-primary">
+                            <i class="fas fa-info-circle"></i> Подробнее
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- Карточка 3 -->
             <div class="col">
-                <div class="card h-100 shadow-sm animate__animated animate__fadeInRight">
+                <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-1s">
                     <img src="/static/img/times-hexagon.png" class="card-img-top" alt="Портфолио фотографа">
                     <div class="card-body">
                         <h5 class="card-title">Портфолио фотографа</h5>
                         <p class="card-text">Красивый сайт с галереей работ, описанием услуг и контактной формой.</p>
-                        <a href="/projects/photographer" class="btn btn-primary">Подробнее</a>
+                        <span class="badge bg-success">Завершен</span>
+                        <p class="card-review"><strong>Отзыв:</strong> "Прекрасная работа, сайт идеально отражает мои услуги!"</p>
+                        <a href="/projects/photographer" class="btn btn-primary">
+                            <i class="fas fa-info-circle"></i> Подробнее
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- Карточка 4 -->
             <div class="col">
-                <div class="card h-100 shadow-sm animate__animated animate__fadeInLeft">
+                <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-1s">
                     <img src="/static/img/times-hexagon.png" class="card-img-top" alt="Личный блог">
                     <div class="card-body">
                         <h5 class="card-title">Личный блог</h5>
                         <p class="card-text">Минималистичный блог с разделами для статей и комментариев.</p>
-                        <a href="/projects/blog" class="btn btn-primary">Подробнее</a>
+                        <span class="badge bg-warning">В процессе</span>
+                        <p class="card-review"><strong>Отзыв:</strong> "Простой и функциональный блог!"</p>
+                        <a href="/projects/blog" class="btn btn-primary">
+                            <i class="fas fa-info-circle"></i> Подробнее
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- Карточка 5 -->
             <div class="col">
-                <div class="card h-100 shadow-sm animate__animated animate__fadeInUp">
+                <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-1s">
                     <img src="/static/img/times-hexagon.png" class="card-img-top" alt="Приложение для фитнеса">
                     <div class="card-body">
                         <h5 class="card-title">Приложение для фитнеса</h5>
                         <p class="card-text">Простой сайт с тренировками, расписанием и трекером прогресса.</p>
-                        <a href="/projects/fitness" class="btn btn-primary">Подробнее</a>
+                        <span class="badge bg-success">Завершен</span>
+                        <p class="card-review"><strong>Отзыв:</strong> "Очень удобное приложение для тренировок!"</p>
+                        <a href="/projects/fitness" class="btn btn-primary">
+                            <i class="fas fa-info-circle"></i> Подробнее
+                        </a>
                     </div>
                 </div>
             </div>
             <!-- Карточка 6 -->
             <div class="col">
-                <div class="card h-100 shadow-sm animate__animated animate__fadeInRight">
+                <div class="card h-100 shadow-sm animate__animated animate__zoomIn animate__delay-1s">
                     <img src="/static/img/times-hexagon.png" class="card-img-top" alt="Заглушка">
                     <div class="card-body">
                         <h5 class="card-title">Заглушка</h5>
                         <p class="card-text">Простая заглушка для проекта.</p>
-                        <a href="/projects/fitness" class="btn btn-primary">Подробнее</a>
+                        <span class="badge bg-secondary">Не активен</span>
+                        <p class="card-review"><strong>Отзыв:</strong> "Заглушка для тестирования проекта."</p>
+                        <a href="/projects/fitness" class="btn btn-primary">
+                            <i class="fas fa-info-circle"></i> Подробнее
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+    
+    
     <footer class="py-3 bg-dark text-white text-center">
         <p>&copy; 2025 Дима. Все права защищены.</p>
     </footer>

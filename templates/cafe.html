@@ -20,7 +20,7 @@
             <p class="lead animate__animated animate__fadeInUp colorHeader">Самый вкусный кофе в городе</p>
             <div class="btn-group">
                 <a href="#menu" class="btn btn-custom animate__animated animate__fadeIn">Наше меню</a>
-                <a href="#delivery" class="btn btn-custom animate__animated animate__fadeIn">Бронь стола</a>
+                <a href="#delivery" class="btn btn-custom animate__animated animate__fadeIn" data-bs-toggle="modal" data-bs-target="#reservationModal">Бронь стола</a>
                 <a href="#contacts" class="btn btn-custom animate__animated animate__fadeIn">Контакты</a>
                 <a href="#reviews" class="btn btn-custom animate__animated animate__fadeIn">Отзывы</a>
             </div>
@@ -36,8 +36,30 @@
         </p>
         <div class="row align-items-center">
             <div class="col-md-6">
-                <div class="card border-0 shadow-lg">
-                    <img src="/static/img/cafe/cafe.jpeg" class="img-fluid rounded-top" alt="Интерьер">
+                <div id="carouselCafe" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Первый слайд -->
+                        <div class="carousel-item active">
+                            <img src="/static/img/cafe/cafe1.jpg" class="d-block w-100" alt="Интерьер кафе 1">
+                        </div>
+                        <!-- Второй слайд -->
+                        <div class="carousel-item">
+                            <img src="/static/img/cafe/cafe2.jpg" class="d-block w-100" alt="Интерьер кафе 2">
+                        </div>
+                        <!-- Третий слайд -->
+                        <div class="carousel-item">
+                            <img src="/static/img/cafe/cafe3.jpg" class="d-block w-100" alt="Интерьер кафе 3">
+                        </div>
+                    </div>
+                    <!-- Управление слайдером (кнопки) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCafe" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Предыдущий</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCafe" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Следующий</span>
+                    </button>
                 </div>
             </div>
             <div class="col-md-6">
@@ -46,6 +68,7 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </section>
 
@@ -188,8 +211,106 @@
         </div>
     </div>
 
+
+<!-- Модальное окно для бронирования -->
+<div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="reservationModalLabel">Бронирование стола</h5>
+            </div>
+            <div class="modal-body">
+                <!-- Выбор стола -->
+                <h6>Выберите стол</h6>
+                <div class="row mb-3">
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table1">
+                            <span class="table-name">Стол №1</span><br>
+                            <span class="table-capacity">(на 6 персон)</span>
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table2">
+                            <span class="table-name">Стол №2</span><br>
+                            <span class="table-capacity">(на 6 персон)</span>
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table3">
+                            <span class="table-name">Стол №3</span><br>
+                            <span class="table-capacity">(на 4 персоны)</span>
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table4">
+                            <span class="table-name">Стол №4</span><br>
+                            <span class="table-capacity">(на 4 персоны)</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table5">
+                            <span class="table-name">Стол №5</span><br>
+                            <span class="table-capacity">(на 2 персоны)</span>
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table6">
+                            <span class="table-name">Стол №6</span><br>
+                            <span class="table-capacity">(на 2 персоны)</span>
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table7">
+                            <span class="table-name">Стол №7</span><br>
+                            <span class="table-capacity">(на 2 персоны)</span>
+                        </button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-outline-custom w-100" id="table8">
+                            <span class="table-name">Стол №8</span><br>
+                            <span class="table-capacity">(на 2 персоны)</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Форма бронирования -->
+                <div class="mb-3">
+                    <label for="reservationDate" class="form-label">Дата и время</label>
+                    <input type="datetime-local" class="form-control" id="reservationDate">
+                </div>
+                <div class="row mb-3">
+                    <div class="col-6">
+                        <label for="firstName" class="form-label">Имя</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Ваше имя">
+                    </div>
+                    <div class="col-6">
+                        <label for="lastName" class="form-label">Фамилия</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Ваша фамилия">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Телефон</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Ваш номер телефона">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="btn btn-custom" id="bookButton">Забронировать</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Сообщение о принятии брони -->
+<div id="confirmationMessage" class="alert alert-success d-none mt-4" role="alert">
+    Ваша бронь принята! Мы ждем вас!
+</div>
+
     <script src="/static/js/cafe/reviewScript.js"></script>
     <script src="/static/js/cafe/showHiddenMenuScript.js"></script>
+    <script src="/static/js/cafe/reservation.js"></script>
 
 </body>
 </html>

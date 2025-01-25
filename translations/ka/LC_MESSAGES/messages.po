@@ -10,3 +10,6 @@ msgstr "პროექტები"
 
 msgid "Services"
 msgstr "მომსახურება"
+
+msgid "Collection of Projects"
+msgstr "პროექტების კოლექცია"

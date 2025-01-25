@@ -18,7 +18,8 @@
                     <h1 class="h3 m-0 text-center text-md-start">{{ _('Code that solves your problems') }}</h1>
                     <div class="d-flex align-items-center mt-2 mt-md-0">
                         <nav class="text-center me-3">
-                            <a href="/projects" class="text-white text-decoration-none mx-2">{{ _('Projects') }}</a>
+                            <a href="{{ url_for('projects', lang=request.args.get('lang', 'ru')) }}" class="text-white text-decoration-none mx-2">{{ _('Projects') }}</a>
+
                             <a href="/services" class="text-white text-decoration-none mx-2">{{ _('Services') }}</a>
                             <a href="/contacts" class="text-white text-decoration-none mx-2">Контакты</a>
                         </nav>

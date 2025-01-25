@@ -10,6 +10,12 @@ app.secret_key = 'wefiu#$!*(wiefwefiu*^@!(@#&^!hqw73197831g167*G&!*#G6168724g*&!
 
 babel = Babel(app)
 
+def get_locale():
+    # Проверяем, выбран ли язык в параметре запроса (например, ?lang=ru)
+    return request.args.get('lang') or request.accept_languages.best_match(['en', 'ka', 'ru'])
+
+# Регистрация приложения и функции выбора языка
+babel.init_app(app, locale_selector=get_locale)
 
 
 @app.route('/')
@@ -48,12 +54,10 @@ def photography():
 def cafe():
     return render_template('cafe.html')
 
+
+
+
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
     
 # Функция для выбора языка
-
-@babel.init_app(app)
-def get_locale():
-    # Проверяем, выбран ли язык в параметре запроса (например, ?lang=ru)
-    return request.args.get('lang') or request.accept_languages.best_match(['en', 'ka', 'ru'])
