@@ -1,4 +1,3 @@
-
 msgid "Home — Portfolio"
 msgstr "მთავარი — პორტფოლიო"
 
@@ -9,7 +8,52 @@ msgid "Projects"
 msgstr "პროექტები"
 
 msgid "Services"
-msgstr "მომსახურება"
+msgstr "მომსახურებები"
 
-msgid "Collection of Projects"
-msgstr "პროექტების კოლექცია"
+msgid "Contacts"
+msgstr "კონტაქტები"
+
+msgid "Language"
+msgstr "ენა"
+
+msgid "Hello! I'm Dima, your versatile assistant"
+msgstr "გამარჯობა! მე ვარ დიმა, თქვენი უნივერსალური დამხმარე"
+
+msgid "I create modern and user-friendly websites that help businesses work effectively and interact with customers. My projects are simple and easy to use."
+msgstr "ვქმნი თანამედროვე და მოსახერხებელ ვებსაიტებს, რომლებიც ეხმარება ბიზნესს ეფექტურად მუშაობაში და მომხმარებლებთან ურთიერთობაში. ჩემი პროექტები მარტივია და მოსახერხებელი."
+
+msgid "View Projects"
+msgstr "პროექტების ნახვა"
+
+msgid "Contact me"
+msgstr "დამიკავშირდით"
+
+msgid "My Skills"
+msgstr "ჩემი უნარები"
+
+msgid "Python"
+msgstr "პითონი"
+
+msgid "Frameworks: Flask, Django. I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+msgstr "ფრეიმვორკები: Flask, Django. ვმუშაობ მონაცემთა ბაზებთან, როგორიცაა MySQL, SQLite, SQLAlchemy. მზად ვარ სხვა გადაწყვეტილებებთან მუშაობისთვის, თუ ეს საჭიროებს კლიენტს."
+
+msgid "Git"
+msgstr "Git"
+
+msgid "I work with GitHub: updating versions, uploading projects, transferring repositories. I can manage team collaboration through version control systems."
+msgstr "ვმუშაობ GitHub-თან: ვახორციელებ ვერსიების განახლებას, ვტვირთავ პროექტებს, ვატარებ რეპოზიტორიუმებს. შემიძლია გუნდის მუშაობის მართვა ვერსიების კონტროლის სისტემის მეშვეობით."
+
+msgid "Website Deployment"
+msgstr "ვებგვერდების განთავსება"
+
+msgid "I deploy websites on servers, configure SSL certificates for security, and provide maintenance and updates after launch."
+msgstr "ვაკონფიგურირებ ვებსაიტებს სერვერებზე, ვაყენებ SSL სერთიფიკატებს უსაფრთხოებისთვის. მზად ვარ ვუძღვნა და განვაახლო ვებსაიტები გასაშვებად."
+
+msgid "Databases"
+msgstr "მონაცემთა ბაზები"
+
+msgid "I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+msgstr "მუშაობ მონაცემთა ბაზებთან, როგორიცაა MySQL, SQLite, SQLAlchemy. მზად ვარ სხვა გადაწყვეტილებებთან მუშაობისთვის, თუ ეს საჭიროებს კლიენტს."
+
+msgid "© 2025 Dima. All rights reserved."
+msgstr "© 2025 დიმა. ყველა უფლება დაცულია"

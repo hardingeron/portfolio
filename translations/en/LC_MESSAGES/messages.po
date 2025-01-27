@@ -1,4 +1,3 @@
-
 msgid "Home — Portfolio"
 msgstr "Home — Portfolio"
 
@@ -11,7 +10,51 @@ msgstr "Projects"
 msgid "Services"
 msgstr "Services"
 
-msgid "Collection of Projects"
-msgstr "Collection of Projects"
+msgid "Contacts"
+msgstr "Contacts"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Hello! I'm Dima, your versatile assistant"
+msgstr "Hello! I'm Dima, your versatile assistant"
+
+msgid "I create modern and user-friendly websites that help businesses work effectively and interact with customers. My projects are simple and easy to use."
+msgstr "I create modern and user-friendly websites that help businesses work effectively and interact with customers. My projects are simple and easy to use."
+
+msgid "View Projects"
+msgstr "View Projects"
+
+msgid "Contact me"
+msgstr "Contact me"
+
+msgid "My Skills"
+msgstr "My Skills"
+
+msgid "Python"
+msgstr "Python"
+
+msgid "Frameworks: Flask, Django. I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+msgstr "Frameworks: Flask, Django. I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+
+msgid "Git"
+msgstr "Git"
+
+msgid "I work with GitHub: updating versions, uploading projects, transferring repositories. I can manage team collaboration through version control systems."
+msgstr "I work with GitHub: updating versions, uploading projects, transferring repositories. I can manage team collaboration through version control systems."
+
+msgid "Website Deployment"
+msgstr "Website Deployment"
+
+msgid "I deploy websites on servers, configure SSL certificates for security, and provide maintenance and updates after launch."
+msgstr "I deploy websites on servers, configure SSL certificates for security, and provide maintenance and updates after launch."
 
 
+msgid "Databases"
+msgstr "Databases"
+
+msgid "I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+msgstr "I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+
+msgid "© 2025 Dima. All rights reserved."
+msgstr "© 2025 Dima. All rights reserved."

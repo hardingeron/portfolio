@@ -1,6 +1,5 @@
-
 msgid "Home — Portfolio"
-msgstr "Главная — Портфолию"
+msgstr "Главная — Портфолио"
 
 msgid "Code that solves your problems"
 msgstr "Код, который решает ваши задачи"
@@ -11,6 +10,50 @@ msgstr "Проекты"
 msgid "Services"
 msgstr "Услуги"
 
-msgid "Collection of Projects"
-msgstr "Коллекция проектов"
+msgid "Contacts"
+msgstr "Контакты"
 
+msgid "Language"
+msgstr "Язык"
+
+msgid "Hello! I'm Dima, your versatile assistant"
+msgstr "Привет! Я Дима, ваш универсальный помощник"
+
+msgid "I create modern and user-friendly websites that help businesses work effectively and interact with customers. My projects are simple and easy to use."
+msgstr "Я создаю современные и удобные сайты, которые помогают бизнесам работать эффективно и взаимодействовать с пользователями. Мои проекты просты и удобны в использовании."
+
+msgid "View Projects"
+msgstr "Посмотреть проекты"
+
+msgid "Contact me"
+msgstr "Связаться со мной"
+
+msgid "My Skills"
+msgstr "Мои навыки"
+
+msgid "Python"
+msgstr "Python"
+
+msgid "Frameworks: Flask, Django. I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+msgstr "Фреймворки: Flask, Django. Работаю с базами данных MySQL, SQLite, SQLAlchemy. Готов разобраться и с другими решениями, если это нужно клиенту."
+
+msgid "Git"
+msgstr "Git"
+
+msgid "I work with GitHub: updating versions, uploading projects, transferring repositories. I can manage team collaboration through version control systems."
+msgstr "Работаю с GitHub: обновляю версии, загружаю проекты, переношу репозитории. Умею поддерживать командную работу через систему контроля версий."
+
+msgid "Website Deployment"
+msgstr "Деплой сайтов"
+
+msgid "I deploy websites on servers, configure SSL certificates for security, and provide maintenance and updates after launch."
+msgstr "Разворачиваю сайты на серверах, настраиваю SSL-сертификаты для безопасности и предоставляю обслуживание и обновления после запуска."
+
+msgid "Databases"
+msgstr "Базы данных"
+
+msgid "I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with other solutions if needed."
+msgstr "Работаю с базами данных MySQL, SQLite, SQLAlchemy. Готов разобраться и с другими решениями, если это нужно клиенту."
+
+msgid "© 2025 Dima. All rights reserved."
+msgstr "© 2025 Дима. Все права защищены."
