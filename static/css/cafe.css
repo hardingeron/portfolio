@@ -18,7 +18,7 @@
     background-color: #6f4410; /* Красный оттенок для кнопок */
     color: #fff;
     border-radius: 50px; /* Округлые кнопки */
-    padding: 15px 30px;
+    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     transition: all 0.3s ease;
@@ -145,18 +145,6 @@ h2 {
 
 
 
-
-
-
-/* Стили для модального окна */
-.modal-content {
-    background-color: #2e2e2e; /* Темный фон для окна */
-    border-radius: 10px; /* Скругленные углы */
-    color: #fff; /* Белый цвет текста */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Тень */
-    padding: 20px; /* Внутренние отступы */
-}
-
 /* Стили для кнопок в модальном окне */
 .btn-outline-custom {
     display: flex;
@@ -201,6 +189,9 @@ h2 {
 
 .btn-secondary:hover {
     background-color: #ed1414; /* Изменение цвета при наведении */
+    transform: translateY(-5px); /* Легкое поднятие кнопки */
+    color: rgb(24, 18, 18);
+
 }
 
 /* Стили для модального фона (полупрозрачный) */
@@ -210,9 +201,6 @@ h2 {
 
 /* Адаптивность для мобильных устройств */
 @media (max-width: 767px) {
-    .modal-content {
-        padding: 10px; /* Меньше внутренних отступов */
-    }
 
     .btn-outline-custom {
         font-size: 12px; /* Меньший размер шрифта на мобильных устройствах */
@@ -241,4 +229,52 @@ h2 {
     background-color: #6f4410; /* Цвет фона для выбранного стола */
     color: #fff; /* Белый текст для выбранного стола */
     border-color: #6f4410; /* Цвет рамки выбранного стола */
+}
+
+
+
+
+
+
+
+
+
+
+/* модальное окно отзывов */
+.modal-content {
+    border-radius: 12px;
+    background: #fff;
+}
+
+.btn-primary {
+    background-color: #6f4410;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #93560d;
+}
+
+
+
+
+.success-message {
+    position: fixed; /* Сообщение будет поверх всего */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрируем по экрану */
+    z-index: 9999; /* Убедимся, что сообщение будет поверх других элементов */
+    padding: 20px;
+    background-color: rgba(0, 128, 0, 0.7); /* Полупрозрачный зеленый фон */
+    color: white;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Плавное появление */
+}
+
+.success-message.show {
+    opacity: 1;
 }

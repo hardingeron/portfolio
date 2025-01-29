@@ -57,3 +57,141 @@ msgstr "Работаю с базами данных MySQL, SQLite, SQLAlchemy. �
 
 msgid "© 2025 Dima. All rights reserved."
 msgstr "© 2025 Дима. Все права защищены."
+
+msgid "Café Cozy Corner"
+msgstr "Кафе Уютный уголок" 
+
+msgid "The tastiest coffee in the city"
+msgstr "Самый вкусный кофе в городе" 
+
+msgid "Our menu"
+msgstr "Наше меню" 
+
+msgid "Table reservation"
+msgstr "Бронь стола" 
+
+msgid "Contacts"
+msgstr "Контакты" 
+
+msgid "Reviews"
+msgstr "Отзывы" 
+
+msgid "About us"
+msgstr "О нас" 
+
+msgid "Café Cozy Corner is a place where comfort and inspiration meet the aroma of freshly brewed coffee. Here you can work quietly or meet with friends, enjoying not only coffee but also delicious desserts and light snacks. We believe that the perfect coffee is not just a drink, but a ritual that gives you a boost of energy and a great mood. Come visit us and make your day special!"
+msgstr "Кафе Уютный уголок — это место, где уют и вдохновение встречаются с ароматом свежезаваренного кофе. Здесь можно спокойно работать или встретиться с друзьями, наслаждаясь не только кофе, но и вкуснейшими десертами и легкими закусками. Мы уверены, что идеальный кофе — это не просто напиток, а ритуал, который подарит вам заряд бодрости и отличное настроение. Загляните к нам и сделайте свой день особенным!" 
+
+msgid "Previous"
+msgstr "Предыдущий" 
+
+msgid "Next"
+msgstr "Следующий" 
+
+msgid "Café Cozy Corner has been operating for over 5 years, creating an atmosphere of comfort and warmth for its guests. It all started with a small café in the city center where we aimed to create a place you’d want to return to. Over the years, we have become a favorite spot for many who appreciate great coffee, a cozy atmosphere, and attentive service. We are proud to offer you not only incredibly delicious drinks but also an atmosphere where every moment is special. Come and dive into our story, enjoy the coffee, and create your own memories with us!"
+msgstr "Кафе Уютный уголок работает уже более 5 лет, создавая атмосферу уюта и тепла для своих гостей. Все началось с небольшой кофейни в центре города, где мы стремились создать место, куда хочется возвращаться. За эти годы мы стали любимым уголком для многих, кто ценит хороший кофе, уютную атмосферу и внимательное обслуживание. Мы гордимся тем, что можем предложить вам не только невероятно вкусные напитки, но и атмосферу, где каждый момент — особенный. Приходите и окунитесь в нашу историю, наслаждайтесь кофе и создавайте свои собственные воспоминания с нами!" 
+
+msgid "Customer Reviews"
+msgstr "Отзывы наших клиентов"
+
+msgid "Our Menu"
+msgstr "Наше меню"
+
+msgid "Cappuccino"
+msgstr "Капучино"
+
+msgid "A gentle and aromatic coffee with milk foam."
+msgstr "Нежный и ароматный кофе с молочной пенкой."
+
+msgid "Price:"
+msgstr "Цена:"
+
+msgid "Chocolate Dessert"
+msgstr "Шоколадный десерт"
+
+msgid "A rich chocolate flavor for true gourmets."
+msgstr "Богатый вкус шоколада для истинных гурманов."
+
+msgid "Caesar Salad"
+msgstr "Салат Цезарь"
+
+msgid "A classic salad with chicken, cheese, and fresh vegetables."
+msgstr "Классический салат с курицей, сыром и свежими овощами."
+
+msgid "Latte"
+msgstr "Латте"
+
+msgid "Coffee with a large amount of milk and delicate foam."
+msgstr "Кофе с большим количеством молока и нежной пенкой."
+
+msgid "Croissant"
+msgstr "Круассан"
+
+msgid "Airy and crispy croissant with almond cream."
+msgstr "Воздушный и хрустящий круассан с миндальным кремом."
+
+msgid "Tomato Soup"
+msgstr "Томатный суп"
+
+msgid "A fragrant soup made from fresh tomatoes with herbs."
+msgstr "Ароматный суп из свежих томатов с зеленью."
+
+msgid "More"
+msgstr "Больше"
+
+msgid "Address: Central St., 10, Moscow"
+msgstr "Адрес: ул. Центральная, д. 10, Москва"
+
+msgid "Phone:"
+msgstr "Телефон:"
+
+msgid "2025 Café Cozy Corner. All rights reserved."
+msgstr "2025 Кафе "Уютный уголок". Все права защищены."
+
+msgid "Leave a Review"
+msgstr "Оставить отзыв"
+
+msgid "Your name"
+msgstr "Ваше имя"
+
+msgid "Your review"
+msgstr "Ваш отзыв"
+
+msgid "Submit"
+msgstr "Отправить"
+
+msgid "Table Reservation"
+msgstr "Бронирование стола"
+
+msgid "Choose a table"
+msgstr "Выберите стол"
+
+msgid "Table"
+msgstr "Стол"
+
+msgid "for 6 people"
+msgstr "на 6 персон"
+
+msgid "for 4 people"
+msgstr "на 4 персоны"
+
+msgid "for 2 people"
+msgstr "на 2 персоны"
+
+msgid "Date and time"
+msgstr "Дата и время"
+
+msgid "First name"
+msgstr "Имя"
+
+msgid "Last name"
+msgstr "Фамилия"
+
+msgid "Phone"
+msgstr "Телефон"
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Reserve"
+msgstr "Забронировать"

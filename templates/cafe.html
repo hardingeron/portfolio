@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кафе "Уютный уголок"</title>
+    <title>{{ _('Café Cozy Corner') }}</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Animate.css -->
@@ -16,13 +19,13 @@
     <section class="hero bg-dark text-white text-center py-5" style="background-image: url('/static/img/cafe/cafe-header.jpg'); background-size: cover; background-position: center;">
         <div class="overlay"></div> <!-- Полупрозрачная подложка -->
         <div class="container">
-            <h1 class="display-4 animate__animated animate__fadeInDown colorHeader">Кафе "Уютный уголок"</h1>
-            <p class="lead animate__animated animate__fadeInUp colorHeader">Самый вкусный кофе в городе</p>
+            <h1 class="display-4 animate__animated animate__fadeInDown colorHeader">{{ _('Café Cozy Corner') }}</h1>
+            <p class="lead animate__animated animate__fadeInUp colorHeader">{{ _('The tastiest coffee in the city') }}</p>
             <div class="btn-group">
-                <a href="#menu" class="btn btn-custom animate__animated animate__fadeIn">Наше меню</a>
-                <a href="#delivery" class="btn btn-custom animate__animated animate__fadeIn" data-bs-toggle="modal" data-bs-target="#reservationModal">Бронь стола</a>
-                <a href="#contacts" class="btn btn-custom animate__animated animate__fadeIn">Контакты</a>
-                <a href="#reviews" class="btn btn-custom animate__animated animate__fadeIn">Отзывы</a>
+                <a href="#menu" class="btn btn-custom animate__animated animate__fadeIn">{{ _('Our menu') }}</a>
+                <a href="#delivery" class="btn btn-custom animate__animated animate__fadeIn" data-bs-toggle="modal" data-bs-target="#reservationModal">{{ _('Table reservation') }}</a>
+                <a href="#contacts" class="btn btn-custom animate__animated animate__fadeIn">{{ _('Contacts') }}</a>
+                <a href="#reviews" class="btn btn-custom animate__animated animate__fadeIn">{{ _('Reviews') }}</a>
             </div>
         </div>
     </section>
@@ -30,9 +33,9 @@
 <!-- О нас -->
 <section class="about py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-4">О нас</h2>
+        <h2 class="text-center mb-4">{{ _('About us') }}</h2>
         <p class="text-center text-muted mb-5 animate__animated animate__fadeInUp">
-            Кафе "Уютный уголок" — это место, где уют и вдохновение встречаются с ароматом свежезаваренного кофе. Здесь можно спокойно работать или встретиться с друзьями, наслаждаясь не только кофе, но и вкуснейшими десертами и легкими закусками. Мы уверены, что идеальный кофе — это не просто напиток, а ритуал, который подарит вам заряд бодрости и отличное настроение. Загляните к нам и сделайте свой день особенным!
+            {{ _('Café Cozy Corner is a place where comfort and inspiration meet the aroma of freshly brewed coffee. Here you can work quietly or meet with friends, enjoying not only coffee but also delicious desserts and light snacks. We believe that the perfect coffee is not just a drink, but a ritual that gives you a boost of energy and a great mood. Come visit us and make your day special!') }}
         </p>
         <div class="row align-items-center">
             <div class="col-md-6">
@@ -54,17 +57,17 @@
                     <!-- Управление слайдером (кнопки) -->
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselCafe" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Предыдущий</span>
+                        <span class="visually-hidden">{{ _('Previous') }} </span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselCafe" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Следующий</span>
+                        <span class="visually-hidden">{{ _('Next') }}</span>
                     </button>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card border-0 shadow-lg p-4">
-                    <p class="lead">Кафе "Уютный уголок" работает уже более 5 лет, создавая атмосферу уюта и тепла для своих гостей. Все началось с небольшой кофейни в центре города, где мы стремились создать место, куда хочется возвращаться. За эти годы мы стали любимым уголком для многих, кто ценит хороший кофе, уютную атмосферу и внимательное обслуживание. Мы гордимся тем, что можем предложить вам не только невероятно вкусные напитки, но и атмосферу, где каждый момент — особенный. Приходите и окунитесь в нашу историю, наслаждайтесь кофе и создавайте свои собственные воспоминания с нами!</p>
+                    <p class="lead">{{ _('Café Cozy Corner has been operating for over 5 years, creating an atmosphere of comfort and warmth for its guests. It all started with a small café in the city center where we aimed to create a place you’d want to return to. Over the years, we have become a favorite spot for many who appreciate great coffee, a cozy atmosphere, and attentive service. We are proud to offer you not only incredibly delicious drinks but also an atmosphere where every moment is special. Come and dive into our story, enjoy the coffee, and create your own memories with us!') }}</p>
                 </div>
             </div>
         </div>
@@ -72,33 +75,45 @@
     </div>
 </section>
 
+
 <!-- Отзывы -->
 <section id="reviews" class="py-5 bg-light">
     <div class="container">
-        <h2 class="text-center mb-4">Отзывы наших клиентов</h2>
+        <h2 class="text-center mb-4">{{ _('Customer Reviews') }}</h2>
+        <div id="review-message" class="container mt-3"></div>
         <div id="reviews-container" class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Отзывы будут динамически добавлены сюда с помощью JavaScript -->
+            {% for review in reviews %}
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-lg">
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p class="mb-3">{{ review.review }}</p>
+                                <footer class="blockquote-footer">{{ review.name }}</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
         <div class="text-center mt-4">
-            <a href="#leave-review" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#leave-review">Оставить отзыв</a>
+            <a href="#leave-review" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#leave-review">{{ _('Leave a Review') }}</a>
         </div>
     </div>
 </section>
 
-
 <!-- Меню -->
 <section id="menu" class="py-5">
     <div class="container">
-        <h2 class="text-center mb-4">Наше меню</h2>
+        <h2 class="text-center mb-4">{{ _('Our Menu') }}</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Основные позиции меню -->
             <div class="col">
                 <div class="card h-100">
                     <img src="/static/img/cafe/capu.jpg" class="card-img-top" alt="Капучино">
                     <div class="card-body">
-                        <h5 class="card-title">Капучино</h5>
-                        <p class="card-text">Нежный и ароматный кофе с молочной пенкой.</p>
-                        <p class="text-primary">Цена: 150₽</p>
+                        <h5 class="card-title">{{ _('Cappuccino') }}</h5>
+                        <p class="card-text">{{ _('A gentle and aromatic coffee with milk foam.') }}</p>
+                        <p class="text-primary">{{ _('Price:') }} 150₽</p>
                     </div>
                 </div>
             </div>
@@ -106,9 +121,9 @@
                 <div class="card h-100">
                     <img src="/static/img/cafe/cho.jpeg" class="card-img-top" alt="Десерт">
                     <div class="card-body">
-                        <h5 class="card-title">Шоколадный десерт</h5>
-                        <p class="card-text">Богатый вкус шоколада для истинных гурманов.</p>
-                        <p class="text-primary">Цена: 200₽</p>
+                        <h5 class="card-title">{{ _('Chocolate Dessert') }}</h5>
+                        <p class="card-text">{{ _('A rich chocolate flavor for true gourmets.') }}</p>
+                        <p class="text-primary">{{ _('Price:') }} 200₽</p>
                     </div>
                 </div>
             </div>
@@ -116,9 +131,9 @@
                 <div class="card h-100">
                     <img src="/static/img/cafe/salad.jpeg" class="card-img-top" alt="Салат">
                     <div class="card-body">
-                        <h5 class="card-title">Салат "Цезарь"</h5>
-                        <p class="card-text">Классический салат с курицей, сыром и свежими овощами.</p>
-                        <p class="text-primary">Цена: 250₽</p>
+                        <h5 class="card-title">{{ _('Caesar Salad') }}</h5>
+                        <p class="card-text">{{ _('A classic salad with chicken, cheese, and fresh vegetables.') }}</p>
+                        <p class="text-primary">{{ _('Price:') }} 250₽</p>
                     </div>
                 </div>
             </div>
@@ -130,9 +145,9 @@
                 <div class="card h-100">
                     <img src="/static/img/cafe/latte.jpeg" class="card-img-top" alt="Латте">
                     <div class="card-body">
-                        <h5 class="card-title">Латте</h5>
-                        <p class="card-text">Кофе с большим количеством молока и нежной пенкой.</p>
-                        <p class="text-primary">Цена: 180₽</p>
+                        <h5 class="card-title">{{ _('Latte') }}</h5>
+                        <p class="card-text">{{ _('Coffee with a large amount of milk and delicate foam.') }}</p>
+                        <p class="text-primary">{{ _('Price:') }} 180₽</p>
                     </div>
                 </div>
             </div>
@@ -140,9 +155,9 @@
                 <div class="card h-100">
                     <img src="/static/img/cafe/cru.jpg" class="card-img-top" alt="Круассан">
                     <div class="card-body">
-                        <h5 class="card-title">Круассан</h5>
-                        <p class="card-text">Воздушный и хрустящий круассан с миндальным кремом.</p>
-                        <p class="text-primary">Цена: 120₽</p>
+                        <h5 class="card-title">{{ _('Croissant') }}</h5>
+                        <p class="card-text">{{ _('Airy and crispy croissant with almond cream.') }}</p>
+                        <p class="text-primary">{{ _('Price:') }} 120₽</p>
                     </div>
                 </div>
             </div>
@@ -150,9 +165,9 @@
                 <div class="card h-100">
                     <img src="/static/img/cafe/soup.jpeg" class="card-img-top" alt="Суп">
                     <div class="card-body">
-                        <h5 class="card-title">Томатный суп</h5>
-                        <p class="card-text">Ароматный суп из свежих томатов с зеленью.</p>
-                        <p class="text-primary">Цена: 300₽</p>
+                        <h5 class="card-title">{{ _('Tomato Soup') }}</h5>
+                        <p class="card-text">{{ _('A fragrant soup made from fresh tomatoes with herbs.') }}</p>
+                        <p class="text-primary">{{ _('Price:') }} 300₽</p>
                     </div>
                 </div>
             </div>
@@ -161,7 +176,7 @@
 
     <!-- Кнопка для управления видимостью -->
     <div class="text-center mt-4">
-        <button class="btn btn-custom animate__animated animate__fadeIn" id="toggle-menu-btn">Больше</button>
+        <button class="btn btn-custom animate__animated animate__fadeIn" id="toggle-menu-btn">{{ _('More') }}</button>
     </div>
 </div>
 </section>
@@ -169,9 +184,9 @@
     <!-- Контакты -->
     <section class="contacts py-5 bg-dark text-white" id="contacts">
         <div class="container">
-            <h2 class="text-center mb-4">Контакты</h2>
-            <p class="text-center">Адрес: ул. Центральная, д. 10, Москва</p>
-            <p class="text-center">Телефон: <a href="tel:+79990000000" class="text-white">+7 (999) 000-00-00</a></p>
+            <h2 class="text-center mb-4">{{ _('Contacts') }}</h2>
+            <p class="text-center">{{ _('Address: Central St., 10, Moscow') }}</p>
+            <p class="text-center">{{ _('Phone:') }} <a href="tel:+79990000000" class="text-white">+7 (999) 000-00-00</a></p>
             <div class="map mt-4">
                 <iframe src="https://www.google.com/maps/embed" width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
             </div>
@@ -179,32 +194,33 @@
     </section>
 
     <footer class="py-3 bg-dark text-white text-center">
-        <p>&copy; 2025 Кафе "Уютный уголок". Все права защищены.</p>
+        <p>&copy; {{ _('2025 Café "Cozy Corner". All rights reserved.') }}</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
-    <!-- Модальное окно для отправки отзыва -->
+
+    <!-- Модальное окно для оставления отзыва -->
     <div class="modal fade" id="leave-review" tabindex="-1" aria-labelledby="leaveReviewLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="leaveReviewLabel">Оставить отзыв</h5>
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header bg-light border-0">
+                    <h5 class="modal-title fw-bold" id="leaveReviewLabel">{{ _('Leave a Review') }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                            <label for="name" class="form-label">Ваше имя</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <label for="name" class="form-label fw-semibold">{{ _('Your name') }}</label>
+                            <input type="text" class="form-control rounded-3" id="name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="review" class="form-label">Ваш отзыв</label>
-                            <textarea class="form-control" id="review" rows="4" required></textarea>
+                            <label for="review" class="form-label fw-semibold">{{ _('Your review') }}</label>
+                            <textarea class="form-control rounded-3" id="review" rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-custom w-100">Отправить</button>
+                        <button type="submit" class="btn btn-primary w-100 py-2 rounded-3">{{ _('Submit') }}</button>
                     </form>
                 </div>
             </div>
@@ -212,106 +228,110 @@
     </div>
 
 
+
 <!-- Модальное окно для бронирования -->
 <div class="modal fade" id="reservationModal" tabindex="-1" aria-labelledby="reservationModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="reservationModalLabel">Бронирование стола</h5>
+                <h5 class="modal-title" id="reservationModalLabel">{{ _('Table Reservation') }}</h5>
             </div>
             <div class="modal-body">
                 <!-- Выбор стола -->
-                <h6>Выберите стол</h6>
+                <h6>{{ _('Choose a table') }}</h6>
                 <div class="row mb-3">
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table1">
-                            <span class="table-name">Стол №1</span><br>
-                            <span class="table-capacity">(на 6 персон)</span>
+                            <span class="table-name">{{ _('Table') }} №1 </span><br>
+                            <span class="table-capacity">({{ _('for 6 people') }})</span>
                         </button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table2">
-                            <span class="table-name">Стол №2</span><br>
-                            <span class="table-capacity">(на 6 персон)</span>
+                            <span class="table-name">{{ _('Table') }}  №2</span><br>
+                            <span class="table-capacity">({{ _('for 6 people') }})</span>
                         </button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table3">
-                            <span class="table-name">Стол №3</span><br>
-                            <span class="table-capacity">(на 4 персоны)</span>
+                            <span class="table-name">{{ _('Table') }} №3</span><br>
+                            <span class="table-capacity">({{ _('for 4 people') }})</span>
                         </button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table4">
-                            <span class="table-name">Стол №4</span><br>
-                            <span class="table-capacity">(на 4 персоны)</span>
+                            <span class="table-name">{{ _('Table') }} №4</span><br>
+                            <span class="table-capacity">({{ _('for 4 people') }})</span>
                         </button>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table5">
-                            <span class="table-name">Стол №5</span><br>
-                            <span class="table-capacity">(на 2 персоны)</span>
+                            <span class="table-name">{{ _('Table') }} №5</span><br>
+                            <span class="table-capacity">({{ _('for 2 people') }})</span>
                         </button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table6">
-                            <span class="table-name">Стол №6</span><br>
-                            <span class="table-capacity">(на 2 персоны)</span>
+                            <span class="table-name">{{ _('Table') }} №6</span><br>
+                            <span class="table-capacity">({{ _('for 2 people') }})</span>
                         </button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table7">
-                            <span class="table-name">Стол №7</span><br>
-                            <span class="table-capacity">(на 2 персоны)</span>
+                            <span class="table-name">{{ _('Table') }} №7</span><br>
+                            <span class="table-capacity">({{ _('for 2 people') }})</span>
                         </button>
                     </div>
                     <div class="col-3">
                         <button class="btn btn-outline-custom w-100" id="table8">
-                            <span class="table-name">Стол №8</span><br>
-                            <span class="table-capacity">(на 2 персоны)</span>
+                            <span class="table-name">{{ _('Table') }} №8</span><br>
+                            <span class="table-capacity">({{ _('for 2 people') }})</span>
                         </button>
                     </div>
                 </div>
 
                 <!-- Форма бронирования -->
                 <div class="mb-3">
-                    <label for="reservationDate" class="form-label">Дата и время</label>
+                    <label for="reservationDate" class="form-label">{{ _('Date and time') }}</label>
                     <input type="datetime-local" class="form-control" id="reservationDate">
                 </div>
                 <div class="row mb-3">
                     <div class="col-6">
-                        <label for="firstName" class="form-label">Имя</label>
+                        <label for="firstName" class="form-label">{{ _('First name') }}</label>
                         <input type="text" class="form-control" id="firstName" placeholder="Ваше имя">
                     </div>
                     <div class="col-6">
-                        <label for="lastName" class="form-label">Фамилия</label>
+                        <label for="lastName" class="form-label">{{ _('Last name') }}</label>
                         <input type="text" class="form-control" id="lastName" placeholder="Ваша фамилия">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="phone" class="form-label">Телефон</label>
+                    <label for="phone" class="form-label">{{ _('Phone') }}</label>
                     <input type="tel" class="form-control" id="phone" placeholder="Ваш номер телефона">
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                <button type="button" class="btn btn-custom" id="bookButton">Забронировать</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{{ _('Close') }}</button>
+                <button type="button" class="btn btn-custom" id="bookButton">{{ _('Reserve') }}</button>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Сообщение о принятии брони -->
-<div id="confirmationMessage" class="alert alert-success d-none mt-4" role="alert">
-    Ваша бронь принята! Мы ждем вас!
-</div>
+
+<!-- Контейнер для сообщения об успешном бронировании -->
+<div id="successMessageContainer" class="success-message" style="display: none;"></div>
+
 
     <script src="/static/js/cafe/reviewScript.js"></script>
-    <script src="/static/js/cafe/showHiddenMenuScript.js"></script>
-    <script src="/static/js/cafe/reservation.js"></script>
 
+
+    <script src="/static/js/cafe/showHiddenMenuScript.js"></script>
+
+    <script src="/static/js/cafe/SaveReservation.js"></script>
+    <script src="/static/js/cafe/AddReview.js"></script>
 </body>
 </html>
 

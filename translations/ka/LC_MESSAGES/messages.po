@@ -57,3 +57,141 @@ msgstr "მუშაობ მონაცემთა ბაზებთან,
 
 msgid "© 2025 Dima. All rights reserved."
 msgstr "© 2025 დიმა. ყველა უფლება დაცულია"
+
+msgid "Café Cozy Corner"
+msgstr "კაფე მყუდრო კუთხე" 
+
+msgid "The tastiest coffee in the city"
+msgstr "ქალაქში ყველაზე გემრიელი ყავა" 
+
+msgid "Our menu"
+msgstr "ჩვენი მენიუ" 
+
+msgid "Table reservation"
+msgstr "მაგიდის დაჯავშნა" 
+
+msgid "Contacts"
+msgstr "კონტაქტები" 
+
+msgid "Reviews"
+msgstr "მიმოხილვები" 
+
+msgid "About us"
+msgstr "ჩვენ შესახებ" 
+
+msgid "Café Cozy Corner is a place where comfort and inspiration meet the aroma of freshly brewed coffee. Here you can work quietly or meet with friends, enjoying not only coffee but also delicious desserts and light snacks. We believe that the perfect coffee is not just a drink, but a ritual that gives you a boost of energy and a great mood. Come visit us and make your day special!"
+msgstr "კაფე მყუდრო კუთხე — ეს არის ადგილი, სადაც კომფორტი და შთაგონება შეხვდება frisch დაყენებული ყავის სურნელთან. აქ შეიძლება მშვიდად იმუშაოთ ან შეხვედრეთ მეგობრებს, არა მხოლოდ ყავის, არამედ გემრიელი დესერტების და მსუბუქი საჭმლის სიამოვნებით. ჩვენ დარწმუნებულები ვართ, რომ იდეალური ყავა მხოლოდ სასმელი არ არის, არამედ რიტუალია, რომელიც მოგცემთ ენერგიას და კარგ განწყობას. მოდით და გააკეთეთ თქვენი დღე განსაკუთრებული!" 
+
+msgid "Previous"
+msgstr "წინა" 
+
+msgid "Next"
+msgstr "შემდეგი" 
+
+msgid "Café Cozy Corner has been operating for over 5 years, creating an atmosphere of comfort and warmth for its guests. It all started with a small café in the city center where we aimed to create a place you’d want to return to. Over the years, we have become a favorite spot for many who appreciate great coffee, a cozy atmosphere, and attentive service. We are proud to offer you not only incredibly delicious drinks but also an atmosphere where every moment is special. Come and dive into our story, enjoy the coffee, and create your own memories with us!"
+msgstr "კაფე მყუდრო კუთხე უკვე 5 წელზე მეტი ხნის განმავლობაში მუშაობს და ქმნის კომფორტულ და თბილ ატმოსფეროს თავის სტუმრებისთვის. ყველაფერი დაიწყო პატარა კაფედან ქალაქის ცენტრში, სადაც ჩვენ ვცდილობდით შემოგვექმნა ადგილი, სადაც ადამიანს სურს დაბრუნება. ამ წლებმა ჩვენთვის გახადა საყვარელი ადგილი ბევრისთვის, ვინც აფასებს კარგ ყავას, კომფორტულ გარემოს და ყურადღებიან მომსახურებას. ჩვენ გვამაყობს, რომ შეგვიძლია შემოგთავაზოთ არა მხოლოდ საოცრად გემრიელი სასმელები, არამედ ატმოსფერო, სადაც ყოველი მომენტი განსაკუთრებულია. მოდით და გაერთეთ ჩვენს ისტორიაში, ისიამოვნეთ ყავით და შექმენით თქვენი საკუთარი მოგონებები ჩვენთან ერთად!" 
+
+msgid "Customer Reviews"
+msgstr "ჩვენი მომხმარებლების მიმოხილვები"
+
+msgid "Leave a Review"
+msgstr "მიმოხილვის დატოვება"
+
+msgid "Our Menu"
+msgstr "ჩვენი მენიუ"
+
+msgid "Cappuccino"
+msgstr "კაპუჩინო"
+
+msgid "A gentle and aromatic coffee with milk foam."
+msgstr "ნაზი და არომატული ყავა რძის ქაფით."
+
+msgid "Price:"
+msgstr "ფასი:"
+
+msgid "Chocolate Dessert"
+msgstr "შოკოლადის დესერტი"
+
+msgid "A rich chocolate flavor for true gourmets."
+msgstr "მდიდარი შოკოლადის გემო ნამდვილ გურმანებისთვის."
+
+msgid "Caesar Salad"
+msgstr "სალათი ცეზარი"
+
+msgid "A classic salad with chicken, cheese, and fresh vegetables."
+msgstr "კლასიკური სალათი ქათმით, ყველით და სუფთა ბოსტნეულით."
+
+msgid "Latte"
+msgstr "ლატე"
+
+msgid "Coffee with a large amount of milk and delicate foam."
+msgstr "ყავა დიდი რაოდენობით რძით და ნაზი ქაფით."
+
+msgid "Croissant"
+msgstr "კრურასანი"
+
+msgid "Airy and crispy croissant with almond cream."
+msgstr "ჰაეროვანი და ხრაშუნა კრურასანი ნუში კრემით."
+
+msgid "Tomato Soup"
+msgstr "თომატის სუპი"
+
+msgid "A fragrant soup made from fresh tomatoes with herbs."
+msgstr "არომატული სუპი ახალი თომატებით და მწვანილებით."
+
+msgid "More"
+msgstr "მეტი"
+
+msgid "Address: Central St., 10, Moscow"
+msgstr "მისამართი: ცენტრალური ქუჩა, სახლი 10, თბილისი"
+
+msgid "Phone:"
+msgstr "ტელეფონი:"
+
+msgid "2025 Café Cozy Corner. All rights reserved."
+msgstr "2025 კაფე "მყუდრო კუთხე". ყველა უფლებები დაცულია."
+
+msgid "Your name"
+msgstr "თქვენი სახელი"
+
+msgid "Your review"
+msgstr "თქვენი მიმოხილვა"
+
+msgid "Submit"
+msgstr "გაგზავნა"
+
+msgid "Table Reservation"
+msgstr "მაგიდის დაჯავშნა"
+
+msgid "Choose a table"
+msgstr "აირჩიეთ მაგიდა"
+
+msgid "Table"
+msgstr "მაგიდა"
+
+msgid "for 6 people"
+msgstr "6 ადამიანზე"
+
+msgid "for 4 people"
+msgstr "4 ადამიანზე"
+
+msgid "for 2 people"
+msgstr "2 ადამიანზე"
+
+msgid "Date and time"
+msgstr "თარიღი და დრო"
+
+msgid "First name"
+msgstr "სახელი"
+
+msgid "Last name"
+msgstr "გვარი"
+
+msgid "Phone"
+msgstr "ტელეფონი"
+
+msgid "Close"
+msgstr "დახურვა"
+
+msgid "Reserve"
+msgstr "დაჯავშნა"

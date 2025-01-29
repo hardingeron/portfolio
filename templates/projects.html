@@ -37,7 +37,7 @@
                         <p class="card-text">Стильная онлайн-визитка с меню, отзывами и формой бронирования.</p>
                         <span class="badge bg-info">В разработке</span>
                         <p class="card-review"><strong>Отзыв:</strong> "Прекрасный дизайн, все работает идеально!"</p>
-                        <a href="/projects/cafe" class="btn btn-primary">
+                        <a href="{{ url_for('cafe', lang=request.args.get('lang', 'ru')) }}" class="btn btn-primary">
                             <i class="fas fa-info-circle"></i> Подробнее
                         </a>
                     </div>

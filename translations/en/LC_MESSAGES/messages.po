@@ -58,3 +58,141 @@ msgstr "I work with databases like MySQL, SQLite, SQLAlchemy. Ready to work with
 
 msgid "© 2025 Dima. All rights reserved."
 msgstr "© 2025 Dima. All rights reserved."
+
+
+msgid "Café Cozy Corner"
+msgstr "Café Cozy Corner"
+
+msgid "The tastiest coffee in the city"
+msgstr "The tastiest coffee in the city"
+
+msgid "Our menu"
+msgstr "Our menu"
+
+msgid "Table reservation"
+msgstr "Table reservation"
+
+
+msgid "Reviews"
+msgstr "Reviews"
+
+msgid "About us"
+msgstr "About us"
+
+msgid "Café 'Cozy Corner' is a place where comfort and inspiration meet the aroma of freshly brewed coffee. Here you can work quietly or meet with friends, enjoying not only coffee but also delicious desserts and light snacks. We believe that the perfect coffee is not just a drink, but a ritual that gives you a boost of energy and a great mood. Come visit us and make your day special!"
+msgstr "Café 'Cozy Corner' is a place where comfort and inspiration meet the aroma of freshly brewed coffee. Here you can work quietly or meet with friends, enjoying not only coffee but also delicious desserts and light snacks. We believe that the perfect coffee is not just a drink, but a ritual that gives you a boost of energy and a great mood. Come visit us and make your day special!"
+
+msgid "Previous"
+msgstr "Previous"
+
+msgid "Next"
+msgstr "Next"
+
+msgid "Café 'Cozy Corner' has been operating for over 5 years, creating an atmosphere of comfort and warmth for its guests. It all started with a small café in the city center where we aimed to create a place you’d want to return to. Over the years, we have become a favorite spot for many who appreciate great coffee, a cozy atmosphere, and attentive service. We are proud to offer you not only incredibly delicious drinks but also an atmosphere where every moment is special. Come and dive into our story, enjoy the coffee, and create your own memories with us!"
+msgstr "Café 'Cozy Corner' has been operating for over 5 years, creating an atmosphere of comfort and warmth for its guests. It all started with a small café in the city center where we aimed to create a place you’d want to return to. Over the years, we have become a favorite spot for many who appreciate great coffee, a cozy atmosphere, and attentive service. We are proud to offer you not only incredibly delicious drinks but also an atmosphere where every moment is special. Come and dive into our story, enjoy the coffee, and create your own memories with us!"
+
+msgid "Customer Reviews"
+msgstr "Customer Reviews"
+
+msgid "Leave a Review"
+msgstr "Leave a Review"
+
+msgid "Our Menu"
+msgstr "Our Menu"
+
+msgid "Cappuccino"
+msgstr "Cappuccino"
+
+msgid "A gentle and aromatic coffee with milk foam."
+msgstr "A gentle and aromatic coffee with milk foam."
+
+msgid "Price:"
+msgstr "Price:"
+
+msgid "Chocolate Dessert"
+msgstr "Chocolate Dessert"
+
+msgid "A rich chocolate flavor for true gourmets."
+msgstr "A rich chocolate flavor for true gourmets."
+
+msgid "Caesar Salad"
+msgstr "Caesar Salad"
+
+msgid "A classic salad with chicken, cheese, and fresh vegetables."
+msgstr "A classic salad with chicken, cheese, and fresh vegetables."
+
+msgid "Latte"
+msgstr "Latte"
+
+msgid "Coffee with a large amount of milk and delicate foam."
+msgstr "Coffee with a large amount of milk and delicate foam."
+
+msgid "Croissant"
+msgstr "Croissant"
+
+msgid "Airy and crispy croissant with almond cream."
+msgstr "Airy and crispy croissant with almond cream."
+
+msgid "Tomato Soup"
+msgstr "Tomato Soup"
+
+msgid "A fragrant soup made from fresh tomatoes with herbs."
+msgstr "A fragrant soup made from fresh tomatoes with herbs."
+
+msgid "More"
+msgstr "More"
+
+msgid "Address: Central St., 10, Moscow"
+msgstr "Address: Central St., 10, Moscow"
+
+msgid "Phone:"
+msgstr "Phone:"
+
+msgid "2025 Café Cozy Corner. All rights reserved."
+msgstr "2025 Café Cozy Corner. All rights reserved."
+
+msgid "Your name"
+msgstr "Your name"
+
+msgid "Your review"
+msgstr "Your review"
+
+msgid "Submit"
+msgstr "Submit"
+
+msgid "Table Reservation"
+msgstr "Table Reservation"
+
+msgid "Choose a table"
+msgstr "Choose a table"
+
+msgid "Table"
+msgstr "Table"
+
+msgid "for 6 people"
+msgstr "for 6 people"
+
+msgid "for 4 people"
+msgstr "for 4 people"
+
+msgid "for 2 people"
+msgstr "for 2 people"
+
+msgid "Date and time"
+msgstr "Date and time"
+
+msgid "First name"
+msgstr "First name"
+
+msgid "Last name"
+msgstr "Last name"
+
+msgid "Phone"
+msgstr "Phone"
+
+msgid "Close"
+msgstr "Close"
+
+msgid "Reserve"
+msgstr "Reserve"
+
